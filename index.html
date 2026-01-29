@@ -1465,7 +1465,7 @@
 
                         // Get driveUrl from search index if available
                         const searchFile = (dashboardData.search_index || []).find(
-                            f => f.name === file.name && f.path.includes(folderNode.path)
+                            f => f.name === file.name && f.path.includes(currentFolderData.path)
                         );
                         const driveUrl = searchFile?.driveUrl || '';
 
