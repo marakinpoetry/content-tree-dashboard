@@ -1353,6 +1353,7 @@
         // Folder Explorer functionality
         let folderNavigationStack = [];
         let currentFolderData = null;
+        let currentFolderChildren = [];  // Store children for click handling
 
         function openFolderExplorer(stage, folderPath = null) {
             const stageData = dashboardData.stages_detail[stage];
@@ -1422,15 +1423,16 @@
             if (currentFolderData.children.length > 0) {
                 html += '<div class="mb-6"><h4 class="text-sm font-semibold text-gray-700 mb-3">📁 Підпапки</h4><div class="grid grid-cols-1 gap-2">';
 
-                currentFolderData.children
-                    .sort((a, b) => b.file_count - a.file_count)
-                    .forEach(child => {
+                // Store sorted children for click handling
+                currentFolderChildren = [...currentFolderData.children].sort((a, b) => b.file_count - a.file_count);
+
+                currentFolderChildren.forEach((child, index) => {
                         const isEmpty = child.is_empty;
                         const emptyClass = isEmpty ? 'bg-red-50 border-red-200' : 'bg-white border-gray-200';
                         const textClass = isEmpty ? 'text-red-600' : 'text-gray-900';
 
                         html += `
-                            <button onclick="navigateToFolder(${JSON.stringify(child).replace(/"/g, '&quot;')})"
+                            <button onclick="navigateToFolderByIndex(${index})"
                                     class="flex items-center justify-between p-3 border ${emptyClass} rounded-lg hover:shadow-md transition-all text-left">
                                 <div class="flex items-center space-x-3">
                                     <svg class="w-5 h-5 ${isEmpty ? 'text-red-400' : 'text-blue-500'}" fill="currentColor" viewBox="0 0 20 20">
@@ -1496,6 +1498,12 @@
             }
 
             content.innerHTML = html;
+        }
+
+        function navigateToFolderByIndex(index) {
+            if (index >= 0 && index < currentFolderChildren.length) {
+                navigateToFolder(currentFolderChildren[index]);
+            }
         }
 
         function navigateToFolder(folderData) {
