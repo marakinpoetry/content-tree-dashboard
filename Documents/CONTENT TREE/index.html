@@ -731,8 +731,12 @@
 
             // Card 1: Total files with WS 1.0 / WS 2.0 breakdown
             document.getElementById('totalContent').textContent = meta.total_files;
-            document.getElementById('ws10Count').textContent = meta.published_count || 0;
-            document.getElementById('ws20Count').textContent = meta.not_published_count || 0;
+            const ws10Total = (data.by_stage['WS 1.0/Pre-Registration'] || 0)
+                            + (data.by_stage['WS 1.0/Trial'] || 0)
+                            + (data.by_stage['WS 1.0/Success_Client'] || 0);
+            const ws20Total = data.by_stage['WS 2.0 Release'] || 0;
+            document.getElementById('ws10Count').textContent = ws10Total;
+            document.getElementById('ws20Count').textContent = ws20Total;
 
             // Card 2: Published (WS 1.0)
             const published = meta.published_count || 0;
