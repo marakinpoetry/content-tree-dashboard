@@ -1098,14 +1098,8 @@
                     alert('Помилка оновлення: ' + result.message);
                 }
             } catch (error) {
-                console.log('Server not running, trying to reload data.json...');
-                await loadData();
-
-                // Also refresh tree on fallback data load
-                if (fullscreenTreeSvg && !document.getElementById('fullscreenTreeView').classList.contains('hidden')) {
-                    const currentStage = document.getElementById('fullscreenTreeStageSelect').value;
-                    loadFullscreenTreeStage(currentStage);
-                }
+                console.error('Refresh failed:', error);
+                alert('Сервер не запущено.\n\nЗапустіть сервер командою:\n./start_dashboard.sh\n\nПотім натисніть "Оновити" знову.');
             } finally {
                 btn.disabled = false;
                 icon.classList.remove('animate-spin');

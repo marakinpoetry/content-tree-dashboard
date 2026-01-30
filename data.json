@@ -1,55 +1,88 @@
 {
   "metadata": {
-    "last_update": "2026-01-29T18:40:34.322634",
-    "total_files": 546,
-    "total_folders": 1500,
-    "filled_folders": 168,
-    "empty_folders": 1199,
-    "fill_rate": 11.2,
+    "last_update": "2026-01-30T11:25:13.956684",
+    "total_files": 608,
+    "total_folders": 1504,
+    "filled_folders": 170,
+    "empty_folders": 1200,
+    "fill_rate": 11.3,
     "target_files": "Fill all folders",
-    "coverage_percent": 11.2,
+    "coverage_percent": 11.3,
     "smart_analysis_enabled": true,
     "published_count": 487,
-    "not_published_count": 59
+    "not_published_count": 121
   },
   "by_stage": {
     "WS 1.0/Pre-Registration": 445,
     "WS 1.0/Trial": 41,
     "WS 1.0/Success_Client": 1,
-    "WS 2.0 Release": 59
+    "WS 2.0 Release": 121
   },
   "by_content_type": {
-    "Landings": 13,
+    "Landings": 21,
     "Articles": 355,
-    "Videos": 94,
-    "Static Ads": 36,
+    "Videos": 96,
+    "Static Ads": 72,
     "Ads": 3,
-    "Other": 25,
+    "Other": 41,
     "Lead Magnets": 3,
     "SMM": 17
   },
   "by_language": {
-    "Ukrainian": 225,
-    "English": 227,
-    "Russian": 59,
+    "Ukrainian": 228,
+    "English": 229,
+    "Russian": 68,
     "German": 17,
     "Polish": 5,
     "French": 3,
     "Spanish": 1,
-    "Unknown": 9
+    "Unknown": 57
   },
   "by_status": {
-    "Published": 58,
-    "Review": 475,
-    "Approved": 11,
+    "Published": 52,
+    "Idea/Brief": 440,
+    "Review": 44,
+    "Approved": 70,
     "Blocked": 2
   },
   "growth_trend": {
     "last_week": 33,
-    "last_month": 52,
-    "weekly_avg": 12.1
+    "last_month": 105,
+    "weekly_avg": 24.4
   },
   "gaps": [
+    {
+      "path": "WS 2.0 Release/webinars",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "Webinar Scripts",
+      "feature": "Webinar Scripts",
+      "content_type": "Webinar Scripts",
+      "severity": "critical",
+      "priority_score": 100,
+      "fill_rate": 0.0,
+      "current_count": 0,
+      "ideal_count": 5,
+      "missing_count": 5,
+      "message": "Webinar Scripts: 0/5 (What's New, Migration Guide, First Project)",
+      "rationale": {
+        "reasons": [
+          "WS 2.0 Release requires 5 webinar scripts"
+        ],
+        "business_impact": [
+          "Critical for product launch",
+          "5 items still needed"
+        ],
+        "missing_items": [
+          "What's New",
+          "Migration Guide",
+          "First Project",
+          "Smart Templates",
+          "Agencies Workflow"
+        ],
+        "score": 100
+      }
+    },
     {
       "path": "WS 1.0/Trial/Features/Tasks",
       "type": "content_gap",
@@ -4363,483 +4396,125 @@
       "is_quick_win": true
     },
     {
-      "path": "WS 1.0/Trial/Features/Dashboards",
-      "type": "content_gap",
-      "stage": "WS 1.0/Trial",
-      "section": "Features",
-      "feature": "Dashboards",
-      "content_type": "Lead Magnets",
+      "path": "WS 2.0 Release/pains",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "Pain Points",
+      "feature": "Pain Points",
+      "content_type": "Pain Points",
       "severity": "critical",
-      "priority_score": 89,
+      "priority_score": 85,
       "fill_rate": 0.0,
       "current_count": 0,
-      "ideal_count": 3,
-      "inventory": {
-        "Articles": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Videos": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Lead Magnets": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Ads": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Landings": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        }
-      },
-      "message": "Dashboards: Lead Magnets gap (0/3)",
+      "ideal_count": 6,
+      "missing_count": 6,
+      "message": "Pain Points: 0/6 (Chaos to Clarity, Missed Deadlines, Communication Breakdown)",
       "rationale": {
         "reasons": [
-          "🎯 Critical for WS 1.0/Trial stage",
-          "📌 Important feature",
-          "❗ Severe gap: 0.0% coverage"
+          "WS 2.0 Release requires 6 pain points"
         ],
         "business_impact": [
-          "Lead Magnets improve onboarding and trial activation"
+          "Critical for product launch",
+          "6 items still needed"
         ],
-        "score": 89,
-        "inventory": {
-          "Articles": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Videos": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Lead Magnets": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Ads": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Landings": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          }
-        }
-      },
-      "actionable_tasks": [
-        {
-          "task": "Create Dashboards Setup Checklist",
-          "language": "English",
-          "effort_hours": 4,
-          "priority": "P0"
-        },
-        {
-          "task": "Create Dashboards Template",
-          "language": "English",
-          "effort_hours": 6,
-          "priority": "P0"
-        },
-        {
-          "task": "Create Dashboards Cheat Sheet",
-          "language": "English",
-          "effort_hours": 3,
-          "priority": "P0"
-        }
-      ],
-      "effort_days": 0.5,
-      "is_quick_win": true
+        "missing_items": [
+          "Chaos to Clarity",
+          "Missed Deadlines",
+          "Communication Breakdown",
+          "Resource Overload",
+          "Visibility Gap",
+          "Tool Fatigue"
+        ],
+        "score": 85
+      }
     },
     {
-      "path": "WS 1.0/Trial/Features/Kanban",
-      "type": "content_gap",
-      "stage": "WS 1.0/Trial",
-      "section": "Features",
-      "feature": "Kanban",
-      "content_type": "Articles",
-      "severity": "critical",
-      "priority_score": 89,
-      "fill_rate": 0.0,
-      "current_count": 0,
-      "ideal_count": 3,
-      "inventory": {
-        "Articles": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Videos": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Lead Magnets": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Ads": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Landings": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        }
-      },
-      "message": "Kanban: Articles gap (0/3)",
+      "path": "WS 2.0 Release/video",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "Video Scripts",
+      "feature": "Video Scripts",
+      "content_type": "Video Scripts",
+      "severity": "medium",
+      "priority_score": 80,
+      "fill_rate": 62.5,
+      "current_count": 5,
+      "ideal_count": 8,
+      "missing_count": 3,
+      "message": "Video Scripts: 5/8 (Introducing WS 2.0, Top 5 Features, Smart Templates)",
       "rationale": {
         "reasons": [
-          "⚡ Important for WS 1.0/Trial",
-          "⭐ Core PM feature",
-          "❗ Severe gap: 0.0% coverage"
+          "WS 2.0 Release requires 8 video scripts"
         ],
         "business_impact": [
-          "Essential functionality users need to understand"
+          "Critical for product launch",
+          "3 items still needed"
         ],
-        "score": 89,
-        "inventory": {
-          "Articles": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Videos": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Lead Magnets": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Ads": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Landings": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          }
-        }
-      },
-      "actionable_tasks": [
-        {
-          "task": "Create 'Kanban Overview' article",
-          "language": "English",
-          "effort_hours": 8,
-          "priority": "P0"
-        },
-        {
-          "task": "Create 'How to use Kanban' tutorial",
-          "language": "English",
-          "effort_hours": 8,
-          "priority": "P0"
-        },
-        {
-          "task": "Create 'Kanban Best Practices' guide",
-          "language": "English",
-          "effort_hours": 8,
-          "priority": "P1"
-        }
-      ],
-      "effort_days": 3,
-      "is_quick_win": false
+        "missing_items": [
+          "Introducing WS 2.0",
+          "Top 5 Features",
+          "Smart Templates",
+          "Upgrade Guide",
+          "Quickstart Tour"
+        ],
+        "score": 80
+      }
     },
     {
-      "path": "WS 1.0/Trial/Features/Reports",
-      "type": "content_gap",
-      "stage": "WS 1.0/Trial",
-      "section": "Features",
-      "feature": "Reports",
-      "content_type": "Lead Magnets",
+      "path": "WS 2.0 Release/cases",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "Case Studies",
+      "feature": "Case Studies",
+      "content_type": "Case Studies",
       "severity": "critical",
-      "priority_score": 89,
+      "priority_score": 80,
       "fill_rate": 0.0,
       "current_count": 0,
       "ideal_count": 3,
-      "inventory": {
-        "Articles": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Videos": {
-          "total": 1,
-          "languages": "1 Ukrainian",
-          "exists": true
-        },
-        "Lead Magnets": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Ads": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Landings": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        }
-      },
-      "message": "Reports: Lead Magnets gap (0/3)",
+      "missing_count": 3,
+      "message": "Case Studies: 0/3 (Agency Case, IT Company Case, Operations Team Case)",
       "rationale": {
         "reasons": [
-          "🎯 Critical for WS 1.0/Trial stage",
-          "📌 Important feature",
-          "❗ Severe gap: 0.0% coverage"
+          "WS 2.0 Release requires 3 case studies"
         ],
         "business_impact": [
-          "Lead Magnets improve onboarding and trial activation"
+          "Critical for product launch",
+          "3 items still needed"
         ],
-        "score": 89,
-        "inventory": {
-          "Articles": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Videos": {
-            "total": 1,
-            "languages": "1 Ukrainian",
-            "exists": true
-          },
-          "Lead Magnets": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Ads": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Landings": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          }
-        }
-      },
-      "actionable_tasks": [
-        {
-          "task": "Create Reports Setup Checklist",
-          "language": "English",
-          "effort_hours": 4,
-          "priority": "P0"
-        },
-        {
-          "task": "Create Reports Template",
-          "language": "English",
-          "effort_hours": 6,
-          "priority": "P0"
-        },
-        {
-          "task": "Create Reports Cheat Sheet",
-          "language": "English",
-          "effort_hours": 3,
-          "priority": "P0"
-        }
-      ],
-      "effort_days": 0.5,
-      "is_quick_win": true
+        "missing_items": [
+          "Agency Case",
+          "IT Company Case",
+          "Operations Team Case"
+        ],
+        "score": 80
+      }
     },
     {
-      "path": "WS 1.0/Pre-Registration/Features/User_Roles",
-      "type": "content_gap",
-      "stage": "WS 1.0/Pre-Registration",
-      "section": "Features",
-      "feature": "User_Roles",
-      "content_type": "Ads",
-      "severity": "critical",
-      "priority_score": 88,
-      "fill_rate": 0.0,
-      "current_count": 0,
-      "ideal_count": 3,
-      "inventory": {
-        "Articles": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Videos": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Lead Magnets": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Ads": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Landings": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        }
-      },
-      "message": "User_Roles: Ads gap (0/3)",
+      "path": "WS 2.0 Release/smm",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "SMM Posts",
+      "feature": "SMM Posts",
+      "content_type": "SMM Posts",
+      "severity": "medium",
+      "priority_score": 50,
+      "fill_rate": 80.0,
+      "current_count": 16,
+      "ideal_count": 20,
+      "missing_count": 4,
+      "message": "SMM Posts: 16/20 (4 items needed)",
       "rationale": {
         "reasons": [
-          "🎯 Critical for WS 1.0/Pre-Registration stage",
-          "📌 Important feature",
-          "❗ Severe gap: 0.0% coverage"
+          "WS 2.0 Release requires 20 smm posts"
         ],
         "business_impact": [
-          "Ads drive lead generation and organic traffic"
+          "Critical for product launch",
+          "4 items still needed"
         ],
-        "score": 88,
-        "inventory": {
-          "Articles": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Videos": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Lead Magnets": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Ads": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Landings": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          }
-        }
-      },
-      "actionable_tasks": [
-        {
-          "task": "Create User_Roles ad campaign (3 variants)",
-          "language": "English",
-          "effort_hours": 8,
-          "priority": "P0"
-        }
-      ],
-      "effort_days": 1,
-      "is_quick_win": true
-    },
-    {
-      "path": "WS 1.0/Pre-Registration/Features/User_Roles",
-      "type": "content_gap",
-      "stage": "WS 1.0/Pre-Registration",
-      "section": "Features",
-      "feature": "User_Roles",
-      "content_type": "Static Ads",
-      "severity": "critical",
-      "priority_score": 88,
-      "fill_rate": 0.0,
-      "current_count": 0,
-      "ideal_count": 3,
-      "inventory": {
-        "Articles": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Videos": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Lead Magnets": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Ads": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        },
-        "Landings": {
-          "total": 0,
-          "languages": "",
-          "exists": false
-        }
-      },
-      "message": "User_Roles: Static Ads gap (0/3)",
-      "rationale": {
-        "reasons": [
-          "🎯 Critical for WS 1.0/Pre-Registration stage",
-          "📌 Important feature",
-          "❗ Severe gap: 0.0% coverage"
-        ],
-        "business_impact": [],
-        "score": 88,
-        "inventory": {
-          "Articles": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Videos": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Lead Magnets": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Ads": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          },
-          "Landings": {
-            "total": 0,
-            "languages": "",
-            "exists": false
-          }
-        }
-      },
-      "actionable_tasks": [
-        {
-          "task": "Create Static Ads for User_Roles",
-          "language": "English",
-          "effort_hours": 8,
-          "priority": "P1"
-        }
-      ],
-      "effort_days": 1,
-      "is_quick_win": true
+        "missing_items": [],
+        "score": 50
+      }
     }
   ],
   "smart_recommendations": {
@@ -5805,7 +5480,7 @@
     "balance_analysis": [
       {
         "type": "stage_imbalance",
-        "message": "Pre-Registration has 31 gaps vs Trial with 19",
+        "message": "Pre-Registration has 29 gaps vs Trial with 16",
         "suggestion": "Focus more on Pre-Registration content to balance funnel coverage"
       }
     ]
@@ -18225,6 +17900,1034 @@
     },
     {
       "id": "WS 2.0 Release_488",
+      "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+      "display_name": "Порівняльна Таблиця Ws 1.0 Vs Ws 2.0 - Групування За Блоками.csv",
+      "path": "WS 2.0 Release/./Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "WS 2.0 Release",
+      "content_type": "Other",
+      "language": "Ukrainian",
+      "status": "Unknown",
+      "size": 13431,
+      "modified": "2025-10-30T19:55:08",
+      "keywords": [
+        "порівняльна",
+        "таблиця",
+        "1.0",
+        "2.0",
+        "групування",
+        "блоками.csv"
+      ],
+      "snippet": "🎨 Інтерфейс та навігація,,",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_489",
+      "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+      "display_name": "Порівняльна Таблиця Ws 1.0 Vs Ws 2.0 - Для Презентації (основне).csv",
+      "path": "WS 2.0 Release/./Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "WS 2.0 Release",
+      "content_type": "Other",
+      "language": "Ukrainian",
+      "status": "Unknown",
+      "size": 1887,
+      "modified": "2025-10-30T19:55:22",
+      "keywords": [
+        "порівняльна",
+        "таблиця",
+        "1.0",
+        "2.0",
+        "для",
+        "презентації",
+        "(основне).csv"
+      ],
+      "snippet": ",Worksection 1.0,Worksection 2.0",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_490",
+      "name": "Presentation-ws-2.0.pdf",
+      "display_name": "Presentation-ws-2.0.pdf",
+      "path": "WS 2.0 Release/./Presentation-ws-2.0.pdf",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/Presentation-ws-2.0.pdf",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "WS 2.0 Release",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Unknown",
+      "size": 155521135,
+      "modified": "2025-09-29T04:32:22",
+      "keywords": [
+        "presentation",
+        "2.0.pdf"
+      ],
+      "snippet": "",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_491",
+      "name": "Presentation-ws-2.0.pptx",
+      "display_name": "Presentation-ws-2.0.pptx",
+      "path": "WS 2.0 Release/./Presentation-ws-2.0.pptx",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/Presentation-ws-2.0.pptx",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "WS 2.0 Release",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Unknown",
+      "size": 13363298,
+      "modified": "2025-09-29T04:54:20",
+      "keywords": [
+        "presentation",
+        "2.0.pptx"
+      ],
+      "snippet": "",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_492",
+      "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+      "display_name": "Порівняльна Таблиця Ws 1.0 Vs Ws 2.0 - Оновлення У Worksection 2.0.csv",
+      "path": "WS 2.0 Release/./Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "WS 2.0 Release",
+      "content_type": "Other",
+      "language": "Ukrainian",
+      "status": "Unknown",
+      "size": 6000,
+      "modified": "2025-10-30T19:55:48",
+      "keywords": [
+        "порівняльна",
+        "таблиця",
+        "1.0",
+        "2.0",
+        "оновлення",
+        "worksection",
+        "2.0.csv"
+      ],
+      "snippet": "Функція,Оновлення у Worksection 2.0",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_493",
+      "name": "comperative-table-ws-2.0-small.pdf",
+      "display_name": "Comperative-table-ws-2.0-small.pdf",
+      "path": "WS 2.0 Release/./comperative-table-ws-2.0-small.pdf",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/comperative-table-ws-2.0-small.pdf",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "WS 2.0 Release",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Unknown",
+      "size": 11982815,
+      "modified": "2025-09-29T05:06:38",
+      "keywords": [
+        "comperative",
+        "table",
+        "2.0",
+        "small.pdf"
+      ],
+      "snippet": "",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_494",
+      "name": "comperative-table-ws-2.0.pdf",
+      "display_name": "Comperative-table-ws-2.0.pdf",
+      "path": "WS 2.0 Release/./comperative-table-ws-2.0.pdf",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/comperative-table-ws-2.0.pdf",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "WS 2.0 Release",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Unknown",
+      "size": 59504031,
+      "modified": "2025-09-29T05:07:48",
+      "keywords": [
+        "comperative",
+        "table",
+        "2.0.pdf"
+      ],
+      "snippet": "",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_495",
+      "name": "creo-1200x628-ws2.0-cluster-с-2.jpg",
+      "display_name": "Creo-1200x628-ws2.0-cluster-с-2.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-с-2.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-с-2.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Russian",
+      "status": "Approved",
+      "size": 2716381,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "2.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/15nmfzNc0G7FCfvQbjLv2TkrIuMvpuyLB/view"
+    },
+    {
+      "id": "WS 2.0 Release_496",
+      "name": "creo-1080x1920-ws2.0-cluster-a-10.png",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-a-10.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-a-10.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-a-10.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 1094654,
+      "modified": "2026-01-20T01:14:04",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "10.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/12EKRWv74i2c3QuRivwh_SRp6RpJwJO5E/view"
+    },
+    {
+      "id": "WS 2.0 Release_497",
+      "name": "creo-1200x628-ws2.0-cluster-b-2.png",
+      "display_name": "Creo-1200x628-ws2.0-cluster-b-2.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-b-2.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-b-2.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 403004,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "2.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1pePns8g3mzJv48Msm2zfgESgPaUzhQVL/view"
+    },
+    {
+      "id": "WS 2.0 Release_498",
+      "name": "creo-1200x628-ws2.0-cluster-с-3.jpg",
+      "display_name": "Creo-1200x628-ws2.0-cluster-с-3.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-с-3.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-с-3.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Russian",
+      "status": "Approved",
+      "size": 2372273,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "3.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1IkAL5jfTdcWQmoRLSO0PEO4hXF7qfywq/view"
+    },
+    {
+      "id": "WS 2.0 Release_499",
+      "name": "creo-1200x628-ws2.0-cluster-с-1.jpg",
+      "display_name": "Creo-1200x628-ws2.0-cluster-с-1.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-с-1.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-с-1.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Russian",
+      "status": "Approved",
+      "size": 473701,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "1.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/13Qk4faGME879b2B6j6_NGU-eMlpjKC4b/view"
+    },
+    {
+      "id": "WS 2.0 Release_500",
+      "name": "creo-1200x628-ws2.0-cluster-d-3.jpg",
+      "display_name": "Creo-1200x628-ws2.0-cluster-d-3.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-d-3.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-d-3.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 2343608,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "3.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1l2npnjXXJTcgILCzTRDmELb3NEIOLHrq/view"
+    },
+    {
+      "id": "WS 2.0 Release_501",
+      "name": "creo-1080x1080-ws2.0-cluster-a-1.png",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-a-1.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-a-1.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-a-1.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 670050,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "1.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1zQMiI7HE7uTHrHznAw9PSxWtgmOR2L-Q/view"
+    },
+    {
+      "id": "WS 2.0 Release_502",
+      "name": "creo-1200x628-ws2.0-cluster-d-2.jpg",
+      "display_name": "Creo-1200x628-ws2.0-cluster-d-2.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-d-2.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-d-2.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 2415970,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "2.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1CJELWjvQqz-RCXHRWkqruM4nZRo5cBgd/view"
+    },
+    {
+      "id": "WS 2.0 Release_503",
+      "name": "creo-1200x628-ws2.0-cluster-b-7.png",
+      "display_name": "Creo-1200x628-ws2.0-cluster-b-7.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-b-7.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-b-7.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 390550,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "7.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1nd6eXRZvwkC91rDF5Ze2lFhRBeujOEMh/view"
+    },
+    {
+      "id": "WS 2.0 Release_504",
+      "name": "creo-1080x1080-ws2.0-cluster-a-2.png",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-a-2.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-a-2.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-a-2.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 907935,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "2.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/19yNXdEEVV7ZBDtJWJRSitn_6bknMlktw/view"
+    },
+    {
+      "id": "WS 2.0 Release_505",
+      "name": "creo-1200x628-ws2.0-cluster-d-1.jpg",
+      "display_name": "Creo-1200x628-ws2.0-cluster-d-1.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-d-1.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-d-1.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 1944130,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "1.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1SeW7ASUdu6KTsc-3CadYRRPt-DC5siT-/view"
+    },
+    {
+      "id": "WS 2.0 Release_506",
+      "name": "creo-1200x628-ws2.0-cluster-a-2.png",
+      "display_name": "Creo-1200x628-ws2.0-cluster-a-2.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-a-2.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-a-2.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 624335,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "2.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/19GIn8H6qiY7h4noZ_it2ktfM60o2UGUR/view"
+    },
+    {
+      "id": "WS 2.0 Release_507",
+      "name": "creo-1080x1080-ws2.0-cluster-d-1.jpg",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-d-1.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-d-1.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-d-1.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 3259440,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "1.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1c_F2B1ID5k6vuHn5KY9oKouEln4fuNUF/view"
+    },
+    {
+      "id": "WS 2.0 Release_508",
+      "name": "creo-1080x1080-ws2.0-cluster-b-7.png",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-b-7.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-b-7.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-b-7.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 643875,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "7.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1CuObXdbXSND6YlhW1EPwa4a3DeQEP9KB/view"
+    },
+    {
+      "id": "WS 2.0 Release_509",
+      "name": "creo-1080x1920-ws2.0-cluster-b-8.png",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-b-8.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-b-8.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-b-8.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 1070448,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "8.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1mImqYUNVOylKeizY305m5agHKjOcmqRx/view"
+    },
+    {
+      "id": "WS 2.0 Release_510",
+      "name": "creo-1200x628-ws2.0-cluster-a-1.png",
+      "display_name": "Creo-1200x628-ws2.0-cluster-a-1.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-a-1.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-a-1.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 417964,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "1.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1pe93ykZKKv5U15Qhh4586B59qb_exaej/view"
+    },
+    {
+      "id": "WS 2.0 Release_511",
+      "name": "creo-1080x1080-ws2.0-cluster-d-2.jpg",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-d-2.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-d-2.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-d-2.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 3568878,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "2.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1wdXml4wyqntg3sYF8NZq0aQCQv9c0xJw/view"
+    },
+    {
+      "id": "WS 2.0 Release_512",
+      "name": "creo-1080x1080-ws2.0-cluster-d-3.jpg",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-d-3.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-d-3.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-d-3.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 3321626,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "3.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1NflnhhTLGhlFYRYBT-tRNmbU6w5uaS5i/view"
+    },
+    {
+      "id": "WS 2.0 Release_513",
+      "name": "creo-1080x1080-ws2.0-cluster-с-1.jpg",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-с-1.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-с-1.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-с-1.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Russian",
+      "status": "Approved",
+      "size": 664688,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "1.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/10Oi2MO5WfKHMBaYxo4IF_SLc6ySRQswA/view"
+    },
+    {
+      "id": "WS 2.0 Release_514",
+      "name": "creo-1080x1080-ws2.0-cluster-b-2.png",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-b-2.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-b-2.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-b-2.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 655234,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "2.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1_ZT-XvB1h9AC6nZsqyIjX0jHs8m6xxOI/view"
+    },
+    {
+      "id": "WS 2.0 Release_515",
+      "name": "creo-1080x1080-ws2.0-cluster-с-3.jpg",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-с-3.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-с-3.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-с-3.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Russian",
+      "status": "Approved",
+      "size": 3497291,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "3.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1iC_Kf5mh6xCUVg9Xw216DZgBeiB2g_nQ/view"
+    },
+    {
+      "id": "WS 2.0 Release_516",
+      "name": "creo-1080x1080-ws2.0-cluster-с-2.jpg",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-с-2.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-с-2.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-с-2.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Russian",
+      "status": "Approved",
+      "size": 3674997,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "2.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1-eMfQQYob_YWcP0XM2XE9NGWzL4BJZAN/view"
+    },
+    {
+      "id": "WS 2.0 Release_517",
+      "name": "creo-1080x1920-ws2.0-cluster-с-1.jpg",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-с-1.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-с-1.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-с-1.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Russian",
+      "status": "Approved",
+      "size": 944966,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "1.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1bSqn888f66-pIZxABM-rgL1TKU-WM3JN/view"
+    },
+    {
+      "id": "WS 2.0 Release_518",
+      "name": "creo-1080x1920-ws2.0-cluster-с-2.jpg",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-с-2.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-с-2.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-с-2.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Russian",
+      "status": "Approved",
+      "size": 6378334,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "2.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1qB_K__HP9xFdJBXG0X4vxsOHJA9kB5qR/view"
+    },
+    {
+      "id": "WS 2.0 Release_519",
+      "name": "creo-1080x1920-ws2.0-cluster-b-2.png",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-b-2.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-b-2.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-b-2.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 1102919,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "2.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1LXqv7gXpA8gsEhRa0r0bGJa0tu31JTU7/view"
+    },
+    {
+      "id": "WS 2.0 Release_520",
+      "name": "creo-1080x1920-ws2.0-cluster-с-3.jpg",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-с-3.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-с-3.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-с-3.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Russian",
+      "status": "Approved",
+      "size": 5912916,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "3.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1sBqkHn0maj5Q4DCbmBT79WYaHA2j4tTr/view"
+    },
+    {
+      "id": "WS 2.0 Release_521",
+      "name": "creo-1080x1080-ws2.0-cluster-b-8.png",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-b-8.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-b-8.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-b-8.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 628964,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "8.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1Y7IWTDlxbshsyjsaXHOa95U88MGYtd3s/view"
+    },
+    {
+      "id": "WS 2.0 Release_522",
+      "name": "creo-1080x1920-ws2.0-cluster-b-7.png",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-b-7.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-b-7.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-b-7.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 1041564,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "7.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1Np-JJD-cGTl9ISysag4zsREpIut6B8_H/view"
+    },
+    {
+      "id": "WS 2.0 Release_523",
+      "name": "creo-1080x1920-ws2.0-cluster-d-1.jpg",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-d-1.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-d-1.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-d-1.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 5213757,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "1.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1rukK9dJbxtfA4brq5WjJc3hl87SY7qoY/view"
+    },
+    {
+      "id": "WS 2.0 Release_524",
+      "name": "creo-1200x628-ws2.0-cluster-a-10.png",
+      "display_name": "Creo-1200x628-ws2.0-cluster-a-10.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-a-10.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-a-10.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 438955,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "10.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1WTRJPXEOK2hZxDGSYkEBy2Adqac0OzCU/view"
+    },
+    {
+      "id": "WS 2.0 Release_525",
+      "name": "creo-1080x1920-ws2.0-cluster-d-3.jpg",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-d-3.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-d-3.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-d-3.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 5642293,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "3.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1pKTjen1jkRjz9q3j42PrlVUhavMvDobF/view"
+    },
+    {
+      "id": "WS 2.0 Release_526",
+      "name": "creo-1080x1920-ws2.0-cluster-d-2.jpg",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-d-2.jpg",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-d-2.jpg",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-d-2.jpg",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 6122236,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "2.jpg"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/10qfEM_NeB9YlBuO_gC_7lRuFd2zACbZA/view"
+    },
+    {
+      "id": "WS 2.0 Release_527",
+      "name": "creo-1080x1920-ws2.0-cluster-a-1.png",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-a-1.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-a-1.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-a-1.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 1006071,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "1.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/15k9XdjnQ-SKCWZ760s0d6z_TpBEOxNDU/view"
+    },
+    {
+      "id": "WS 2.0 Release_528",
+      "name": "creo-1080x1920-ws2.0-cluster-a-2.png",
+      "display_name": "Creo-1080x1920-ws2.0-cluster-a-2.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-a-2.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1920-ws2.0-cluster-a-2.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 1442889,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1080x1920",
+        "ws2.0",
+        "cluster",
+        "2.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1GmSAgxkzrYJLIO9UHhGB-cjYwTmccajl/view"
+    },
+    {
+      "id": "WS 2.0 Release_529",
+      "name": "creo-1200x628-ws2.0-cluster-b-8.png",
+      "display_name": "Creo-1200x628-ws2.0-cluster-b-8.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-b-8.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1200x628-ws2.0-cluster-b-8.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 465268,
+      "modified": "2026-01-07T04:59:02",
+      "keywords": [
+        "creo",
+        "1200x628",
+        "ws2.0",
+        "cluster",
+        "8.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1TQP6B40rxKwb-AmZOEOCV-MQU7djJk7D/view"
+    },
+    {
+      "id": "WS 2.0 Release_530",
+      "name": "creo-1080x1080-ws2.0-cluster-a-10.png",
+      "display_name": "Creo-1080x1080-ws2.0-cluster-a-10.png",
+      "path": "WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-a-10.png",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/ads/static ads/creo-1080x1080-ws2.0-cluster-a-10.png",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "static ads",
+      "content_type": "Ads",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 593159,
+      "modified": "2026-01-07T04:59:00",
+      "keywords": [
+        "creo",
+        "1080x1080",
+        "ws2.0",
+        "cluster",
+        "10.png"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1MfZUUTIp0Cmf68arf5bGN4kNV-gBv1AK/view"
+    },
+    {
+      "id": "WS 2.0 Release_531",
       "name": "Текст — Як Worksection 2.0 допомагає креативним агенціям працювати швидше та ефективніше.md",
       "display_name": "Текст — Як Worksection 2.0 Допомагає Креативним Агенціям Працювати Швидше Та Ефективніше",
       "path": "WS 2.0 Release/articles/Текст — Як Worksection 2.0 допомагає креативним агенціям працювати швидше та ефективніше.md",
@@ -18252,7 +18955,7 @@
       "driveUrl": "https://drive.google.com/file/d/19mTxpD7dgQ3Yy_weK0jnBRWawM9qZZvs/view"
     },
     {
-      "id": "WS 2.0 Release_489",
+      "id": "WS 2.0 Release_532",
       "name": "Текст — Worksection 2.0_ що змінилось і чому це важливо.md",
       "display_name": "Текст — Worksection 2.0 Що Змінилось І Чому Це Важливо",
       "path": "WS 2.0 Release/articles/Текст — Worksection 2.0_ що змінилось і чому це важливо.md",
@@ -18277,7 +18980,7 @@
       "driveUrl": "https://drive.google.com/file/d/1bV0TRYD3sQU7Ol28d2HTyOHtwXJ2aJAq/view"
     },
     {
-      "id": "WS 2.0 Release_490",
+      "id": "WS 2.0 Release_533",
       "name": "Текст — Частина 1. Гайд з управління задачами і проєктами у Worksection 2.0.md",
       "display_name": "Текст — Частина 1. Гайд З Управління Задачами І Проєктами У Worksection 2.0",
       "path": "WS 2.0 Release/articles/Текст — Частина 1. Гайд з управління задачами і проєктами у Worksection 2.0.md",
@@ -18304,7 +19007,7 @@
       "driveUrl": "https://drive.google.com/file/d/1E1z4Ol8x2GUGI7pSZfrouqmBrR3o94Ad/view"
     },
     {
-      "id": "WS 2.0 Release_491",
+      "id": "WS 2.0 Release_534",
       "name": "Текст — Як за допомогою Worksection 2.0 оптимізувати бюджет і ресурси проєктів (Humanized).md",
       "display_name": "Текст — Як За Допомогою Worksection 2.0 Оптимізувати Бюджет І Ресурси Проєктів (humanized)",
       "path": "WS 2.0 Release/articles/Текст — Як за допомогою Worksection 2.0 оптимізувати бюджет і ресурси проєктів (Humanized).md",
@@ -18332,7 +19035,7 @@
       "driveUrl": "https://drive.google.com/file/d/1z6bfNtftlQ6Xpm17UYRhau8v5W5f4Ikg/view"
     },
     {
-      "id": "WS 2.0 Release_492",
+      "id": "WS 2.0 Release_535",
       "name": "Текст — Нові інструменти планування у Worksection 2.0.md",
       "display_name": "Текст — Нові Інструменти Планування У Worksection 2.0",
       "path": "WS 2.0 Release/articles/Текст — Нові інструменти планування у Worksection 2.0.md",
@@ -18357,7 +19060,7 @@
       "driveUrl": "https://drive.google.com/file/d/1r67Nk62BRuRW455Oipvegq2wsmrVzmPj/view"
     },
     {
-      "id": "WS 2.0 Release_493",
+      "id": "WS 2.0 Release_536",
       "name": "Текст — Оновлені Канбан та діаграма Ганта — новий рівень візуалізації з Worksection 2.0.md",
       "display_name": "Текст — Оновлені Канбан Та Діаграма Ганта — Новий Рівень Візуалізації З Worksection 2.0",
       "path": "WS 2.0 Release/articles/Текст — Оновлені Канбан та діаграма Ганта — новий рівень візуалізації з Worksection 2.0.md",
@@ -18386,7 +19089,7 @@
       "driveUrl": "https://drive.google.com/file/d/14-b7nXisvEPhzWMkLPbhW5shwH_jdxeZ/view"
     },
     {
-      "id": "WS 2.0 Release_494",
+      "id": "WS 2.0 Release_537",
       "name": "Текст — Автоматизація та аналітика у Worksection 2.0.md",
       "display_name": "Текст — Автоматизація Та Аналітика У Worksection 2.0",
       "path": "WS 2.0 Release/articles/Текст — Автоматизація та аналітика у Worksection 2.0.md",
@@ -18410,7 +19113,7 @@
       "driveUrl": "https://drive.google.com/file/d/1y5u5FrzmeDppgBCZ2PEWRjdS5OUhHqgG/view"
     },
     {
-      "id": "WS 2.0 Release_495",
+      "id": "WS 2.0 Release_538",
       "name": "Текст — Дашборди у Worksection 2.0.md",
       "display_name": "Текст — Дашборди У Worksection 2.0",
       "path": "WS 2.0 Release/articles/Текст — Дашборди у Worksection 2.0.md",
@@ -18433,7 +19136,7 @@
       "driveUrl": "https://drive.google.com/file/d/1UqylkXPOzXDSGYERzk0dsDrp5tsEjlym/view"
     },
     {
-      "id": "WS 2.0 Release_496",
+      "id": "WS 2.0 Release_539",
       "name": "Текст — Як гнучкі шаблони задач і проєктів у Worksection 2.0 автоматизують повторювані процеси.md",
       "display_name": "Текст — Як Гнучкі Шаблони Задач І Проєктів У Worksection 2.0 Автоматизують Повторювані Процеси",
       "path": "WS 2.0 Release/articles/Текст — Як гнучкі шаблони задач і проєктів у Worksection 2.0 автоматизують повторювані процеси.md",
@@ -18462,7 +19165,7 @@
       "driveUrl": "https://drive.google.com/file/d/1YaejMKxEV1speSebOqpT4xdsmcmIVvOf/view"
     },
     {
-      "id": "WS 2.0 Release_497",
+      "id": "WS 2.0 Release_540",
       "name": "Текст — Швидкий старт у Worksection 2.0.md",
       "display_name": "Текст — Швидкий Старт У Worksection 2.0",
       "path": "WS 2.0 Release/articles/Текст — Швидкий старт у Worksection 2.0.md",
@@ -18486,7 +19189,7 @@
       "driveUrl": "https://drive.google.com/file/d/1Patd4ziFnurZPyTJkG7i81W0DnMqGFQO/view"
     },
     {
-      "id": "WS 2.0 Release_498",
+      "id": "WS 2.0 Release_541",
       "name": "Текст — Український таск-менеджер Worksection представив оновлену версію 2.0.md",
       "display_name": "Текст — Український Таск-менеджер Worksection Представив Оновлену Версію 2.0",
       "path": "WS 2.0 Release/articles/Текст — Український таск-менеджер Worksection представив оновлену версію 2.0.md",
@@ -18514,7 +19217,7 @@
       "driveUrl": "https://drive.google.com/file/d/1yK60vzlxNbvFgEtjr8eyHD7sLi_vvP-M/view"
     },
     {
-      "id": "WS 2.0 Release_499",
+      "id": "WS 2.0 Release_542",
       "name": "Текст — Як організувати роботу продуктових команд з Worksection 2.0.md",
       "display_name": "Текст — Як Організувати Роботу Продуктових Команд З Worksection 2.0",
       "path": "WS 2.0 Release/articles/Текст — Як організувати роботу продуктових команд з Worksection 2.0.md",
@@ -18540,7 +19243,7 @@
       "driveUrl": "https://drive.google.com/file/d/1dfYARvVzCUZwnHQugqJHaJjqB6WZNw5x/view"
     },
     {
-      "id": "WS 2.0 Release_500",
+      "id": "WS 2.0 Release_543",
       "name": "Текст — Як Worksection 2.0 прискорює управління проєктами.md",
       "display_name": "Текст — Як Worksection 2.0 Прискорює Управління Проєктами",
       "path": "WS 2.0 Release/articles/Текст — Як Worksection 2.0 прискорює управління проєктами.md",
@@ -18565,7 +19268,7 @@
       "driveUrl": "https://drive.google.com/file/d/1Kqs6swZUvyH-esmBrhQ5VcIRkiRRxc2E/view"
     },
     {
-      "id": "WS 2.0 Release_501",
+      "id": "WS 2.0 Release_544",
       "name": "Текст — Підвищення продуктивності з Worksection 2.0.md",
       "display_name": "Текст — Підвищення Продуктивності З Worksection 2.0",
       "path": "WS 2.0 Release/articles/Текст — Підвищення продуктивності з Worksection 2.0.md",
@@ -18589,7 +19292,7 @@
       "driveUrl": "https://drive.google.com/file/d/1u_jOsGjLKq9IEiVK9ILbvPk5XqTciwoY/view"
     },
     {
-      "id": "WS 2.0 Release_502",
+      "id": "WS 2.0 Release_545",
       "name": "Текст — Частина 2. Гайд з управління задачами і проєктами у Worksection 2.0.md",
       "display_name": "Текст — Частина 2. Гайд З Управління Задачами І Проєктами У Worksection 2.0",
       "path": "WS 2.0 Release/articles/Текст — Частина 2. Гайд з управління задачами і проєктами у Worksection 2.0.md",
@@ -18616,7 +19319,190 @@
       "driveUrl": "https://drive.google.com/file/d/1HZ-XiLb6A-zB6iXwNahwc64cnTTSPLSI/view"
     },
     {
-      "id": "WS 2.0 Release_503",
+      "id": "WS 2.0 Release_546",
+      "name": "time-tracking.txt",
+      "display_name": "Time-tracking.txt",
+      "path": "WS 2.0 Release/landigns/features/time-tracking.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/time-tracking.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 43292,
+      "modified": "2026-01-21T18:44:51.532000",
+      "keywords": [
+        "time",
+        "tracking.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": "https://drive.google.com/file/d/1LlpkCWaLAQOpZt-o5rakb-sqRUXagqdm/view"
+    },
+    {
+      "id": "WS 2.0 Release_547",
+      "name": "dashboard.txt",
+      "display_name": "Dashboard.txt",
+      "path": "WS 2.0 Release/landigns/features/dashboard.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/dashboard.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 45753,
+      "modified": "2026-01-21T18:52:38.843000",
+      "keywords": [
+        "dashboard.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": "https://drive.google.com/file/d/1zjzK8XFvyxN6ie-KYPvl3x258Vi57vUn/view"
+    },
+    {
+      "id": "WS 2.0 Release_548",
+      "name": "kanban.txt",
+      "display_name": "Kanban.txt",
+      "path": "WS 2.0 Release/landigns/features/kanban.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/kanban.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 43747,
+      "modified": "2026-01-21T18:37:28.767000",
+      "keywords": [
+        "kanban.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": "https://drive.google.com/file/d/15F_UA1d6Iw51ULhCo3eulSUtNgimiRmT/view"
+    },
+    {
+      "id": "WS 2.0 Release_549",
+      "name": "reports.txt",
+      "display_name": "Reports.txt",
+      "path": "WS 2.0 Release/landigns/features/reports.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/reports.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 45010,
+      "modified": "2026-01-21T18:55:39.218000",
+      "keywords": [
+        "reports.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": "https://drive.google.com/file/d/17TyHrErkL_xNvj1CX_4fqy4_RZF01hmh/view"
+    },
+    {
+      "id": "WS 2.0 Release_550",
+      "name": "projects-tasks.txt",
+      "display_name": "Projects-tasks.txt",
+      "path": "WS 2.0 Release/landigns/features/projects-tasks.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/projects-tasks.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 44609,
+      "modified": "2026-01-21T18:52:26.084000",
+      "keywords": [
+        "projects",
+        "tasks.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": "https://drive.google.com/file/d/19C46qhY1VDLKu347AKXgo5U3yKTtoYge/view"
+    },
+    {
+      "id": "WS 2.0 Release_551",
+      "name": "messenger-chats.txt",
+      "display_name": "Messenger-chats.txt",
+      "path": "WS 2.0 Release/landigns/features/messenger-chats.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/messenger-chats.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 42672,
+      "modified": "2026-01-21T18:30:14.756000",
+      "keywords": [
+        "messenger",
+        "chats.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": "https://drive.google.com/file/d/1uRTiUIFdqjIwSOYJUoA3AOL1CoDqjRs7/view"
+    },
+    {
+      "id": "WS 2.0 Release_552",
+      "name": "PLAN.md",
+      "display_name": "Plan",
+      "path": "WS 2.0 Release/landigns/features/PLAN.md",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/PLAN.md",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Other",
+      "language": "English",
+      "status": "Approved",
+      "size": 5330,
+      "modified": "2026-01-21T19:21:39.989000",
+      "keywords": [
+        "plan"
+      ],
+      "snippet": "Створити серію feature pages англійською мовою для Worksection 2.0, використовуючи оновлений шаблон clickup-template.txt та контент з knowledge base.",
+      "driveUrl": "https://drive.google.com/file/d/17wRmJ5euCQk1Ln23CTbVqIRzKMgGwYQX/view"
+    },
+    {
+      "id": "WS 2.0 Release_553",
+      "name": "calendar.txt",
+      "display_name": "Calendar.txt",
+      "path": "WS 2.0 Release/landigns/features/calendar.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/calendar.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 50275,
+      "modified": "2026-01-21T19:09:58.797000",
+      "keywords": [
+        "calendar.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": "https://drive.google.com/file/d/1iSAGhnnTqTq2jwVEXvB075rW1hQjh1El/view"
+    },
+    {
+      "id": "WS 2.0 Release_554",
+      "name": "gantt.txt",
+      "display_name": "Gantt.txt",
+      "path": "WS 2.0 Release/landigns/features/gantt.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/gantt.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Other",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 44228,
+      "modified": "2026-01-21T18:39:59.786000",
+      "keywords": [
+        "gantt.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": "https://drive.google.com/file/d/1-D4_McwtqHr2yQ5iGggFpm-gzzi2aYxM/view"
+    },
+    {
+      "id": "WS 2.0 Release_555",
       "name": "projects-tasks.md",
       "display_name": "Projects-tasks",
       "path": "WS 2.0 Release/landings/features/projects-tasks.md",
@@ -18626,7 +19512,7 @@
       "feature": "features",
       "content_type": "Landings",
       "language": "English",
-      "status": "Published",
+      "status": "Approved",
       "size": 44609,
       "modified": "2026-01-21T18:52:26.084649",
       "keywords": [
@@ -18637,7 +19523,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_504",
+      "id": "WS 2.0 Release_556",
       "name": "reports.md",
       "display_name": "Reports",
       "path": "WS 2.0 Release/landings/features/reports.md",
@@ -18647,7 +19533,7 @@
       "feature": "features",
       "content_type": "Landings",
       "language": "English",
-      "status": "Published",
+      "status": "Approved",
       "size": 45010,
       "modified": "2026-01-21T18:55:39.218755",
       "keywords": [
@@ -18657,7 +19543,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_505",
+      "id": "WS 2.0 Release_557",
       "name": "calendar.md",
       "display_name": "Calendar",
       "path": "WS 2.0 Release/landings/features/calendar.md",
@@ -18667,7 +19553,7 @@
       "feature": "features",
       "content_type": "Landings",
       "language": "English",
-      "status": "Published",
+      "status": "Approved",
       "size": 50275,
       "modified": "2026-01-21T19:09:58.797466",
       "keywords": [
@@ -18677,7 +19563,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_506",
+      "id": "WS 2.0 Release_558",
       "name": "dashboard.md",
       "display_name": "Dashboard",
       "path": "WS 2.0 Release/landings/features/dashboard.md",
@@ -18687,7 +19573,7 @@
       "feature": "features",
       "content_type": "Landings",
       "language": "English",
-      "status": "Published",
+      "status": "Approved",
       "size": 45753,
       "modified": "2026-01-21T18:52:38.843535",
       "keywords": [
@@ -18697,7 +19583,48 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_507",
+      "id": "WS 2.0 Release_559",
+      "name": "time-tracking.txt",
+      "display_name": "Time-tracking.txt",
+      "path": "WS 2.0 Release/landings/features/time-tracking.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landings/features/time-tracking.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Landings",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 43292,
+      "modified": "2026-01-21T18:44:51.532000",
+      "keywords": [
+        "time",
+        "tracking.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_560",
+      "name": "dashboard.txt",
+      "display_name": "Dashboard.txt",
+      "path": "WS 2.0 Release/landings/features/dashboard.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landings/features/dashboard.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Landings",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 45753,
+      "modified": "2026-01-21T18:52:38.843000",
+      "keywords": [
+        "dashboard.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_561",
       "name": "kanban.md",
       "display_name": "Kanban",
       "path": "WS 2.0 Release/landings/features/kanban.md",
@@ -18717,7 +19644,68 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_508",
+      "id": "WS 2.0 Release_562",
+      "name": "kanban.txt",
+      "display_name": "Kanban.txt",
+      "path": "WS 2.0 Release/landings/features/kanban.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landings/features/kanban.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Landings",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 43747,
+      "modified": "2026-01-21T18:37:28.767000",
+      "keywords": [
+        "kanban.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_563",
+      "name": "reports.txt",
+      "display_name": "Reports.txt",
+      "path": "WS 2.0 Release/landings/features/reports.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landings/features/reports.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Landings",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 45010,
+      "modified": "2026-01-21T18:55:39.218000",
+      "keywords": [
+        "reports.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_564",
+      "name": "projects-tasks.txt",
+      "display_name": "Projects-tasks.txt",
+      "path": "WS 2.0 Release/landings/features/projects-tasks.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landings/features/projects-tasks.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Landings",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 44609,
+      "modified": "2026-01-21T18:52:26.084000",
+      "keywords": [
+        "projects",
+        "tasks.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_565",
       "name": "time-tracking.md",
       "display_name": "Time-tracking",
       "path": "WS 2.0 Release/landings/features/time-tracking.md",
@@ -18727,7 +19715,7 @@
       "feature": "features",
       "content_type": "Landings",
       "language": "English",
-      "status": "Published",
+      "status": "Approved",
       "size": 43292,
       "modified": "2026-01-21T18:44:51.532015",
       "keywords": [
@@ -18738,7 +19726,28 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_509",
+      "id": "WS 2.0 Release_566",
+      "name": "messenger-chats.txt",
+      "display_name": "Messenger-chats.txt",
+      "path": "WS 2.0 Release/landings/features/messenger-chats.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landings/features/messenger-chats.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Landings",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 42672,
+      "modified": "2026-01-21T18:30:14.756000",
+      "keywords": [
+        "messenger",
+        "chats.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_567",
       "name": "PLAN.md",
       "display_name": "Plan",
       "path": "WS 2.0 Release/landings/features/PLAN.md",
@@ -18748,7 +19757,7 @@
       "feature": "features",
       "content_type": "Landings",
       "language": "English",
-      "status": "Published",
+      "status": "Approved",
       "size": 5330,
       "modified": "2026-01-21T19:21:39.989031",
       "keywords": [
@@ -18758,7 +19767,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_510",
+      "id": "WS 2.0 Release_568",
       "name": "messenger-chats.md",
       "display_name": "Messenger-chats",
       "path": "WS 2.0 Release/landings/features/messenger-chats.md",
@@ -18779,7 +19788,47 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_511",
+      "id": "WS 2.0 Release_569",
+      "name": "calendar.txt",
+      "display_name": "Calendar.txt",
+      "path": "WS 2.0 Release/landings/features/calendar.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landings/features/calendar.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Landings",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 50275,
+      "modified": "2026-01-21T19:09:58.797000",
+      "keywords": [
+        "calendar.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_570",
+      "name": "gantt.txt",
+      "display_name": "Gantt.txt",
+      "path": "WS 2.0 Release/landings/features/gantt.txt",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landings/features/gantt.txt",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "features",
+      "content_type": "Landings",
+      "language": "Unknown",
+      "status": "Approved",
+      "size": 44228,
+      "modified": "2026-01-21T18:39:59.786000",
+      "keywords": [
+        "gantt.txt"
+      ],
+      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
+      "driveUrl": ""
+    },
+    {
+      "id": "WS 2.0 Release_571",
       "name": "gantt.md",
       "display_name": "Gantt",
       "path": "WS 2.0 Release/landings/features/gantt.md",
@@ -18799,7 +19848,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_512",
+      "id": "WS 2.0 Release_572",
       "name": "Текст — Як українська команда створила Worksection 2.0.md",
       "display_name": "Текст — Як Українська Команда Створила Worksection 2.0",
       "path": "WS 2.0 Release/pr&media/Текст — Як українська команда створила Worksection 2.0.md",
@@ -18824,7 +19873,7 @@
       "driveUrl": "https://drive.google.com/file/d/1f4FHk3jbJ9wbs_80GTEwnO1Js9ymbY6P/view"
     },
     {
-      "id": "WS 2.0 Release_513",
+      "id": "WS 2.0 Release_573",
       "name": "Текст — Як український таск-менеджер Worksection не пішов шляхом венчурних інвестицій — і виграв.md",
       "display_name": "Текст — Як Український Таск-менеджер Worksection Не Пішов Шляхом Венчурних Інвестицій — І Виграв",
       "path": "WS 2.0 Release/pr&media/Текст — Як український таск-менеджер Worksection не пішов шляхом венчурних інвестицій — і виграв.md",
@@ -18853,7 +19902,7 @@
       "driveUrl": "https://drive.google.com/file/d/1dBxllUcliqyhNbCz0g-L8bZ4pw23ByIp/view"
     },
     {
-      "id": "WS 2.0 Release_514",
+      "id": "WS 2.0 Release_574",
       "name": "Текст — Створюємо глобальний SaaS без інвесторів_ уроки Worksection.md",
       "display_name": "Текст — Створюємо Глобальний Saas Без Інвесторів Уроки Worksection",
       "path": "WS 2.0 Release/pr&media/Текст — Створюємо глобальний SaaS без інвесторів_ уроки Worksection.md",
@@ -18880,7 +19929,7 @@
       "driveUrl": "https://drive.google.com/file/d/1XdAF1U2cE9KqE9MwrslQWr65a1OG0v6c/view"
     },
     {
-      "id": "WS 2.0 Release_515",
+      "id": "WS 2.0 Release_575",
       "name": "Прес-реліз про вихід на Product Hunt.md",
       "display_name": "Прес-реліз Про Вихід На Product Hunt",
       "path": "WS 2.0 Release/pr&media/Прес-реліз про вихід на Product Hunt.md",
@@ -18905,7 +19954,7 @@
       "driveUrl": "https://drive.google.com/file/d/16aUXCBwsysyZnGvRiOw8eepw9Xxpii-Y/view"
     },
     {
-      "id": "WS 2.0 Release_516",
+      "id": "WS 2.0 Release_576",
       "name": "Текст — Український таск-менеджер Worksection представив оновлену версію 2.0.md",
       "display_name": "Текст — Український Таск-менеджер Worksection Представив Оновлену Версію 2.0",
       "path": "WS 2.0 Release/pr&media/Текст — Український таск-менеджер Worksection представив оновлену версію 2.0.md",
@@ -18933,7 +19982,7 @@
       "driveUrl": "https://drive.google.com/file/d/1ebaZ_rSYbcqHGLkTE0YTiQpwAHY2-x8M/view"
     },
     {
-      "id": "WS 2.0 Release_517",
+      "id": "WS 2.0 Release_577",
       "name": "Текст — Worksection 2.0_ новий погляд на управління проєктами для сучасних команд.md",
       "display_name": "Текст — Worksection 2.0 Новий Погляд На Управління Проєктами Для Сучасних Команд",
       "path": "WS 2.0 Release/pr&media/Текст — Worksection 2.0_ новий погляд на управління проєктами для сучасних команд.md",
@@ -18962,7 +20011,7 @@
       "driveUrl": "https://drive.google.com/file/d/1ea-un_HV8mcNi0QBVfXIakB83KuAQ_GU/view"
     },
     {
-      "id": "WS 2.0 Release_518",
+      "id": "WS 2.0 Release_578",
       "name": "Product Hunt — Сценарії відповідей на критичні коментарі.md",
       "display_name": "Product Hunt — Сценарії Відповідей На Критичні Коментарі",
       "path": "WS 2.0 Release/product hunt kit/answer scenarios/Product Hunt — Сценарії відповідей на критичні коментарі.md",
@@ -18987,7 +20036,7 @@
       "driveUrl": "https://drive.google.com/file/d/1GSVz12vk7_0f3bo3-zrJaV8ZGsHzXWjk/view"
     },
     {
-      "id": "WS 2.0 Release_519",
+      "id": "WS 2.0 Release_579",
       "name": "Product Hunt — Retrospective Blog.md",
       "display_name": "Product Hunt — Retrospective Blog",
       "path": "WS 2.0 Release/product hunt kit/articles/Product Hunt — Retrospective Blog.md",
@@ -19010,7 +20059,7 @@
       "driveUrl": "https://drive.google.com/file/d/1ltLUljDc3x3UNBY-8AWA_JrCBsMqXQF-/view"
     },
     {
-      "id": "WS 2.0 Release_520",
+      "id": "WS 2.0 Release_580",
       "name": "Product Hunt — DM-повідомлення.md",
       "display_name": "Product Hunt — Dm-повідомлення",
       "path": "WS 2.0 Release/product hunt kit/direct messages/Product Hunt — DM-повідомлення.md",
@@ -19032,7 +20081,7 @@
       "driveUrl": "https://drive.google.com/file/d/13dEi1k5x65j03UMZvDXuYqyMnRZaqF4p/view"
     },
     {
-      "id": "WS 2.0 Release_521",
+      "id": "WS 2.0 Release_581",
       "name": "Product Hunt — TESTIMONIALS.md",
       "display_name": "Product Hunt — Testimonials",
       "path": "WS 2.0 Release/product hunt kit/direct messages/Product Hunt — TESTIMONIALS.md",
@@ -19054,7 +20103,7 @@
       "driveUrl": "https://drive.google.com/file/d/12loP9iYnaB5WYw_-7Gqc09gKVkqbdUZX/view"
     },
     {
-      "id": "WS 2.0 Release_522",
+      "id": "WS 2.0 Release_582",
       "name": "PRODUCT HUNT — EMAIL CAMPAIGN.md",
       "display_name": "Product Hunt — Email Campaign",
       "path": "WS 2.0 Release/product hunt kit/emaiils/PRODUCT HUNT — EMAIL CAMPAIGN.md",
@@ -19077,7 +20126,7 @@
       "driveUrl": "https://drive.google.com/file/d/1rq9TNiBViLOYNqzHOgphiLVSRVVhS6wp/view"
     },
     {
-      "id": "WS 2.0 Release_523",
+      "id": "WS 2.0 Release_583",
       "name": "Product Hunt — Launch Day Selection Strategy.md",
       "display_name": "Product Hunt — Launch Day Selection Strategy",
       "path": "WS 2.0 Release/product hunt kit/launch day/Product Hunt — Launch Day Selection Strategy.md",
@@ -19102,7 +20151,7 @@
       "driveUrl": "https://drive.google.com/file/d/171rGWwFjx98MO5zTgk-BsEuOf_XJWHpm/view"
     },
     {
-      "id": "WS 2.0 Release_524",
+      "id": "WS 2.0 Release_584",
       "name": "Product Hunt — Retrospective Post.md",
       "display_name": "Product Hunt — Retrospective Post",
       "path": "WS 2.0 Release/product hunt kit/posts/Product Hunt — Retrospective Post.md",
@@ -19125,7 +20174,7 @@
       "driveUrl": "https://drive.google.com/file/d/1wIw-cqQzd6eFOffG9vnF-w8jZI2eugDX/view"
     },
     {
-      "id": "WS 2.0 Release_525",
+      "id": "WS 2.0 Release_585",
       "name": "Product Hunt — Тизер-пости для LinkedIn, X, Telegram, Instagram.md",
       "display_name": "Product Hunt — Тизер-пости Для Linkedin, X, Telegram, Instagram",
       "path": "WS 2.0 Release/product hunt kit/posts/Product Hunt — Тизер-пости для LinkedIn, X, Telegram, Instagram.md",
@@ -19152,7 +20201,7 @@
       "driveUrl": "https://drive.google.com/file/d/1eIX4NbtvNBOf5QM_mHxHoAb3-jw700tJ/view"
     },
     {
-      "id": "WS 2.0 Release_526",
+      "id": "WS 2.0 Release_586",
       "name": "Product Hunt — GALLERY SCREENSHOTS.md",
       "display_name": "Product Hunt — Gallery Screenshots",
       "path": "WS 2.0 Release/product hunt kit/web page/Product Hunt — GALLERY SCREENSHOTS.md",
@@ -19175,7 +20224,7 @@
       "driveUrl": "https://drive.google.com/file/d/1RHXuYldQuxtj4Gnq7u-OdS6HSSGs4rnv/view"
     },
     {
-      "id": "WS 2.0 Release_527",
+      "id": "WS 2.0 Release_587",
       "name": "Product Hunt — Landing Page.md",
       "display_name": "Product Hunt — Landing Page",
       "path": "WS 2.0 Release/product hunt kit/web page/Product Hunt — Landing Page.md",
@@ -19198,7 +20247,7 @@
       "driveUrl": "https://drive.google.com/file/d/1s-QFZhlamA5RYplSuvJZdK-kIALzbSY3/view"
     },
     {
-      "id": "WS 2.0 Release_528",
+      "id": "WS 2.0 Release_588",
       "name": "Пост — Worksection_ Тоді vs Зараз .md",
       "display_name": "Пост — Worksection Тоді Vs Зараз",
       "path": "WS 2.0 Release/smm/Пост — Worksection_ Тоді vs Зараз .md",
@@ -19221,7 +20270,7 @@
       "driveUrl": "https://drive.google.com/file/d/1FxlJSz6rKg1e_36jeBiEZ_1kLM_l4mPw/view"
     },
     {
-      "id": "WS 2.0 Release_529",
+      "id": "WS 2.0 Release_589",
       "name": "Пост — Worksection 2.0_ що нового .md",
       "display_name": "Пост — Worksection 2.0 Що Нового",
       "path": "WS 2.0 Release/smm/Пост — Worksection 2.0_ що нового .md",
@@ -19244,7 +20293,7 @@
       "driveUrl": "https://drive.google.com/file/d/1RPvvd303M2Ksz3Khu56CEpflcnSlb8HK/view"
     },
     {
-      "id": "WS 2.0 Release_530",
+      "id": "WS 2.0 Release_590",
       "name": "Пост — Розумні сповіщення у Worksection 2.0.md",
       "display_name": "Пост — Розумні Сповіщення У Worksection 2.0",
       "path": "WS 2.0 Release/smm/Пост — Розумні сповіщення у Worksection 2.0.md",
@@ -19268,7 +20317,7 @@
       "driveUrl": "https://drive.google.com/file/d/1GDbhqVpYMyfabNRw14-ADwwU4-5wvPS1/view"
     },
     {
-      "id": "WS 2.0 Release_531",
+      "id": "WS 2.0 Release_591",
       "name": "Пост — Worksection 2.0 запущено.md",
       "display_name": "Пост — Worksection 2.0 Запущено",
       "path": "WS 2.0 Release/smm/Пост — Worksection 2.0 запущено.md",
@@ -19291,7 +20340,7 @@
       "driveUrl": "https://drive.google.com/file/d/1hHBjrxYqE6qlxiSZ_BT27FGx6M0P6QvG/view"
     },
     {
-      "id": "WS 2.0 Release_532",
+      "id": "WS 2.0 Release_592",
       "name": "Пост — Worksection 2.0 — гнучкість для всієї команди.md",
       "display_name": "Пост — Worksection 2.0 — Гнучкість Для Всієї Команди",
       "path": "WS 2.0 Release/smm/Пост — Worksection 2.0 — гнучкість для всієї команди.md",
@@ -19317,7 +20366,7 @@
       "driveUrl": "https://drive.google.com/file/d/1sDz72JnDhZxeOJXGwVAw5CDVWNMakyCj/view"
     },
     {
-      "id": "WS 2.0 Release_533",
+      "id": "WS 2.0 Release_593",
       "name": "Пост — Запрошення на вебінар [Шаблон].md",
       "display_name": "Пост — Запрошення На Вебінар [шаблон]",
       "path": "WS 2.0 Release/smm/Пост — Запрошення на вебінар [Шаблон].md",
@@ -19340,7 +20389,7 @@
       "driveUrl": "https://drive.google.com/file/d/1_GbHXe8WOfo-s-Vql8gg8JzF2tMM95wx/view"
     },
     {
-      "id": "WS 2.0 Release_534",
+      "id": "WS 2.0 Release_594",
       "name": "Пост — Worksection 2.0 — Створено в Україні 🇺🇦 Використовується у світі 🌍.md",
       "display_name": "Пост — Worksection 2.0 — Створено В Україні 🇺🇦 Використовується У Світі 🌍",
       "path": "WS 2.0 Release/smm/Пост — Worksection 2.0 — Створено в Україні 🇺🇦 Використовується у світі 🌍.md",
@@ -19366,7 +20415,7 @@
       "driveUrl": "https://drive.google.com/file/d/1SL0Ec3H6W0y_nzhYF0AX1rRFEjUuiZtQ/view"
     },
     {
-      "id": "WS 2.0 Release_535",
+      "id": "WS 2.0 Release_595",
       "name": "Пост — 3 ключові проблеми проєктного менеджменту.md",
       "display_name": "Пост — 3 Ключові Проблеми Проєктного Менеджменту",
       "path": "WS 2.0 Release/smm/Пост — 3 ключові проблеми проєктного менеджменту.md",
@@ -19390,7 +20439,7 @@
       "driveUrl": "https://drive.google.com/file/d/1psCxhhIU4-wy-GM48TgogXeTmgNtfdON/view"
     },
     {
-      "id": "WS 2.0 Release_536",
+      "id": "WS 2.0 Release_596",
       "name": "Пост — Найбільш очікувана фіча (вбудований месенджер).md",
       "display_name": "Пост — Найбільш Очікувана Фіча (вбудований Месенджер)",
       "path": "WS 2.0 Release/smm/Пост — Найбільш очікувана фіча (вбудований месенджер).md",
@@ -19415,7 +20464,7 @@
       "driveUrl": "https://drive.google.com/file/d/1waGJPJSkllaSd-_MqBas4yCEwlW4r6vU/view"
     },
     {
-      "id": "WS 2.0 Release_537",
+      "id": "WS 2.0 Release_597",
       "name": "Серія сторіс — Щось нове наближається… 👀 (1).md",
       "display_name": "Серія Сторіс — Щось Нове Наближається… 👀 (1)",
       "path": "WS 2.0 Release/smm/Серія сторіс — Щось нове наближається… 👀 (1).md",
@@ -19440,7 +20489,7 @@
       "driveUrl": "https://drive.google.com/file/d/1LM2qStb4oS92gjTNVxFi_QQx0aG9JulL/view"
     },
     {
-      "id": "WS 2.0 Release_538",
+      "id": "WS 2.0 Release_598",
       "name": "Пост — Гнучкі шаблони задач і проєктів.md",
       "display_name": "Пост — Гнучкі Шаблони Задач І Проєктів",
       "path": "WS 2.0 Release/smm/Пост — Гнучкі шаблони задач і проєктів.md",
@@ -19464,7 +20513,7 @@
       "driveUrl": "https://drive.google.com/file/d/1sR3I9sX9yEPfv0rG50KdyzoHxa_m793k/view"
     },
     {
-      "id": "WS 2.0 Release_539",
+      "id": "WS 2.0 Release_599",
       "name": "Пост — План дня у WS 2.0.md",
       "display_name": "Пост — План Дня У Ws 2.0",
       "path": "WS 2.0 Release/smm/Пост — План дня у WS 2.0.md",
@@ -19487,7 +20536,7 @@
       "driveUrl": "https://drive.google.com/file/d/1E39Lip5JsnwkIkOg1BgPpNOY76cv8-QM/view"
     },
     {
-      "id": "WS 2.0 Release_540",
+      "id": "WS 2.0 Release_600",
       "name": "Пост — Швидкий старт у Worksection 2.0.md",
       "display_name": "Пост — Швидкий Старт У Worksection 2.0",
       "path": "WS 2.0 Release/smm/Пост — Швидкий старт у Worksection 2.0.md",
@@ -19511,7 +20560,7 @@
       "driveUrl": "https://drive.google.com/file/d/1nO27r3_L7yuXZtOqO0ylkSvH5koPs2Fv/view"
     },
     {
-      "id": "WS 2.0 Release_541",
+      "id": "WS 2.0 Release_601",
       "name": "Пост — Зворотний відлік до релізу WS 2.0.md",
       "display_name": "Пост — Зворотний Відлік До Релізу Ws 2.0",
       "path": "WS 2.0 Release/smm/Пост — Зворотний відлік до релізу WS 2.0.md",
@@ -19535,7 +20584,7 @@
       "driveUrl": "https://drive.google.com/file/d/122N8AsYXoZfgvSqjtyiOLiJO5Qtx7qFI/view"
     },
     {
-      "id": "WS 2.0 Release_542",
+      "id": "WS 2.0 Release_602",
       "name": "Пост — Старт закритого бета-тестування.md",
       "display_name": "Пост — Старт Закритого Бета-тестування",
       "path": "WS 2.0 Release/smm/Пост — Старт закритого бета-тестування.md",
@@ -19559,7 +20608,7 @@
       "driveUrl": "https://drive.google.com/file/d/1milR_gm_9df4YefoPGjRV2egwoKCBkaR/view"
     },
     {
-      "id": "WS 2.0 Release_543",
+      "id": "WS 2.0 Release_603",
       "name": "Пост — Як Worksection 2.0 допомагає креативним агенціям.md",
       "display_name": "Пост — Як Worksection 2.0 Допомагає Креативним Агенціям",
       "path": "WS 2.0 Release/smm/Пост — Як Worksection 2.0 допомагає креативним агенціям.md",
@@ -19584,7 +20633,7 @@
       "driveUrl": "https://drive.google.com/file/d/1muuEOs6jYkxQTrPffWVnRTzYrNASGzTR/view"
     },
     {
-      "id": "WS 2.0 Release_544",
+      "id": "WS 2.0 Release_604",
       "name": "onboarding_ws2.0_script_uk.md",
       "display_name": "Onboarding Ws2.0 Script Uk",
       "path": "WS 2.0 Release/video/onboarding_ws2.0_script_uk.md",
@@ -19606,7 +20655,7 @@
       "driveUrl": "https://drive.google.com/file/d/1bH1Jq0FiF0wS7XZ3FNx2DXTrwCDTSMv9/view"
     },
     {
-      "id": "WS 2.0 Release_545",
+      "id": "WS 2.0 Release_605",
       "name": "onboarding_ws2.0_script_en.md",
       "display_name": "Onboarding Ws2.0 Script",
       "path": "WS 2.0 Release/video/onboarding_ws2.0_script_en.md",
@@ -19628,7 +20677,7 @@
       "driveUrl": "https://drive.google.com/file/d/11dWveYYgBqUvcKn_eOWr3wEzq6nIItQH/view"
     },
     {
-      "id": "WS 2.0 Release_546",
+      "id": "WS 2.0 Release_606",
       "name": "onboarding_checklist_ws2.0_script_uk.md",
       "display_name": "Onboarding Checklist Ws2.0 Script Uk",
       "path": "WS 2.0 Release/video/onboarding_checklist_ws2.0_script_uk.md",
@@ -19649,6 +20698,51 @@
       ],
       "snippet": "---",
       "driveUrl": "https://drive.google.com/file/d/1tZ2cfxjDRb0rGf0vLnhQSqJui0gb8i0N/view"
+    },
+    {
+      "id": "WS 2.0 Release_607",
+      "name": "onboarding_ws2.0_script_uk.docx",
+      "display_name": "Onboarding Ws2.0 Script Uk.docx",
+      "path": "WS 2.0 Release/video/onboarding_ws2.0_script_uk.docx",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/video/onboarding_ws2.0_script_uk.docx",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "WS 2.0 Release",
+      "content_type": "Videos",
+      "language": "Unknown",
+      "status": "Unknown",
+      "size": 15938,
+      "modified": "2025-12-11T13:45:26.052577",
+      "keywords": [
+        "onboarding",
+        "ws2.0",
+        "script",
+        "uk.docx"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1NGuVnnVBWr1XZFcXv5wJP1Cl2rGaV8WT/view"
+    },
+    {
+      "id": "WS 2.0 Release_608",
+      "name": "onboarding_ws2.0_script_en.docx",
+      "display_name": "Onboarding Ws2.0 Script.docx",
+      "path": "WS 2.0 Release/video/onboarding_ws2.0_script_en.docx",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/video/onboarding_ws2.0_script_en.docx",
+      "stage": "WS 2.0 Release",
+      "section": "WS 2.0 Release",
+      "feature": "WS 2.0 Release",
+      "content_type": "Videos",
+      "language": "English",
+      "status": "Unknown",
+      "size": 14933,
+      "modified": "2025-12-11T13:45:26.115004",
+      "keywords": [
+        "onboarding",
+        "ws2.0",
+        "script.docx"
+      ],
+      "snippet": "",
+      "driveUrl": "https://drive.google.com/file/d/1yLkh2OKZZdW_Ph0lRFId50eGj05fEoR4/view"
     }
   ],
   "stages_detail": {
@@ -34628,28 +35722,32 @@
       }
     },
     "WS 2.0 Release": {
-      "total_files": 59,
-      "total_folders": 21,
-      "filled_folders": 12,
-      "empty_folders_count": 7,
-      "fill_rate": 57.1,
+      "total_files": 121,
+      "total_folders": 25,
+      "filled_folders": 14,
+      "empty_folders_count": 8,
+      "fill_rate": 56.0,
       "by_section": {
-        "video": 3,
+        "Other files": 7,
+        "video": 5,
         "articles": 15,
         "smm": 16,
         "pr&media": 6,
-        "landings": 9,
-        "product hunt kit": 10
+        "landigns": 9,
+        "landings": 17,
+        "product hunt kit": 10,
+        "ads": 36
       },
       "by_subsection": {},
       "empty_folders": [
         "pains",
         "ads",
         "cases",
-        "ads/static ads",
         "ads/video ads",
         "landings/business types",
-        "landings/competitors"
+        "landings/competitors",
+        "landigns/business",
+        "landigns/competitors"
       ],
       "recent_changes": [
         {
@@ -34826,20 +35924,201 @@
       "folder_tree": {
         "name": "WS 2.0 Release",
         "path": ".",
-        "file_count": 59,
+        "file_count": 121,
         "children": [
           {
             "name": "ads",
             "path": "ads",
-            "file_count": 0,
+            "file_count": 36,
             "children": [
               {
                 "name": "static ads",
                 "path": "ads/static ads",
-                "file_count": 0,
+                "file_count": 36,
                 "children": [],
-                "files": [],
-                "is_empty": true
+                "files": [
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-с-2.jpg",
+                    "size": 2716381,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-a-10.png",
+                    "size": 1094654,
+                    "modified": "2026-01-20T01:14:04"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-b-2.png",
+                    "size": 403004,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-с-3.jpg",
+                    "size": 2372273,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-с-1.jpg",
+                    "size": 473701,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-d-3.jpg",
+                    "size": 2343608,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-a-1.png",
+                    "size": 670050,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-d-2.jpg",
+                    "size": 2415970,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-b-7.png",
+                    "size": 390550,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-a-2.png",
+                    "size": 907935,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-d-1.jpg",
+                    "size": 1944130,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-a-2.png",
+                    "size": 624335,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-d-1.jpg",
+                    "size": 3259440,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-b-7.png",
+                    "size": 643875,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-b-8.png",
+                    "size": 1070448,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-a-1.png",
+                    "size": 417964,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-d-2.jpg",
+                    "size": 3568878,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-d-3.jpg",
+                    "size": 3321626,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-с-1.jpg",
+                    "size": 664688,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-b-2.png",
+                    "size": 655234,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-с-3.jpg",
+                    "size": 3497291,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-с-2.jpg",
+                    "size": 3674997,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-с-1.jpg",
+                    "size": 944966,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-с-2.jpg",
+                    "size": 6378334,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-b-2.png",
+                    "size": 1102919,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-с-3.jpg",
+                    "size": 5912916,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-b-8.png",
+                    "size": 628964,
+                    "modified": "2026-01-07T04:59:00"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-b-7.png",
+                    "size": 1041564,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-d-1.jpg",
+                    "size": 5213757,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-a-10.png",
+                    "size": 438955,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-d-3.jpg",
+                    "size": 5642293,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-d-2.jpg",
+                    "size": 6122236,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-a-1.png",
+                    "size": 1006071,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1920-ws2.0-cluster-a-2.png",
+                    "size": 1442889,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1200x628-ws2.0-cluster-b-8.png",
+                    "size": 465268,
+                    "modified": "2026-01-07T04:59:02"
+                  },
+                  {
+                    "name": "creo-1080x1080-ws2.0-cluster-a-10.png",
+                    "size": 593159,
+                    "modified": "2026-01-07T04:59:00"
+                  }
+                ],
+                "is_empty": false
               },
               {
                 "name": "video ads",
@@ -34851,7 +36130,7 @@
               }
             ],
             "files": [],
-            "is_empty": true
+            "is_empty": false
           },
           {
             "name": "articles",
@@ -34946,9 +36225,88 @@
             "is_empty": true
           },
           {
+            "name": "landigns",
+            "path": "landigns",
+            "file_count": 9,
+            "children": [
+              {
+                "name": "business",
+                "path": "landigns/business",
+                "file_count": 0,
+                "children": [],
+                "files": [],
+                "is_empty": true
+              },
+              {
+                "name": "competitors",
+                "path": "landigns/competitors",
+                "file_count": 0,
+                "children": [],
+                "files": [],
+                "is_empty": true
+              },
+              {
+                "name": "features",
+                "path": "landigns/features",
+                "file_count": 9,
+                "children": [],
+                "files": [
+                  {
+                    "name": "time-tracking.txt",
+                    "size": 43292,
+                    "modified": "2026-01-21T18:44:51.532000"
+                  },
+                  {
+                    "name": "dashboard.txt",
+                    "size": 45753,
+                    "modified": "2026-01-21T18:52:38.843000"
+                  },
+                  {
+                    "name": "kanban.txt",
+                    "size": 43747,
+                    "modified": "2026-01-21T18:37:28.767000"
+                  },
+                  {
+                    "name": "reports.txt",
+                    "size": 45010,
+                    "modified": "2026-01-21T18:55:39.218000"
+                  },
+                  {
+                    "name": "projects-tasks.txt",
+                    "size": 44609,
+                    "modified": "2026-01-21T18:52:26.084000"
+                  },
+                  {
+                    "name": "messenger-chats.txt",
+                    "size": 42672,
+                    "modified": "2026-01-21T18:30:14.756000"
+                  },
+                  {
+                    "name": "PLAN.md",
+                    "size": 5330,
+                    "modified": "2026-01-21T19:21:39.989000"
+                  },
+                  {
+                    "name": "calendar.txt",
+                    "size": 50275,
+                    "modified": "2026-01-21T19:09:58.797000"
+                  },
+                  {
+                    "name": "gantt.txt",
+                    "size": 44228,
+                    "modified": "2026-01-21T18:39:59.786000"
+                  }
+                ],
+                "is_empty": false
+              }
+            ],
+            "files": [],
+            "is_empty": false
+          },
+          {
             "name": "landings",
             "path": "landings",
-            "file_count": 9,
+            "file_count": 17,
             "children": [
               {
                 "name": "business types",
@@ -34969,7 +36327,7 @@
               {
                 "name": "features",
                 "path": "landings/features",
-                "file_count": 9,
+                "file_count": 17,
                 "children": [],
                 "files": [
                   {
@@ -34993,14 +36351,44 @@
                     "modified": "2026-01-21T18:52:38.843535"
                   },
                   {
+                    "name": "time-tracking.txt",
+                    "size": 43292,
+                    "modified": "2026-01-21T18:44:51.532000"
+                  },
+                  {
+                    "name": "dashboard.txt",
+                    "size": 45753,
+                    "modified": "2026-01-21T18:52:38.843000"
+                  },
+                  {
                     "name": "kanban.md",
                     "size": 43747,
                     "modified": "2026-01-21T18:37:28.767817"
                   },
                   {
+                    "name": "kanban.txt",
+                    "size": 43747,
+                    "modified": "2026-01-21T18:37:28.767000"
+                  },
+                  {
+                    "name": "reports.txt",
+                    "size": 45010,
+                    "modified": "2026-01-21T18:55:39.218000"
+                  },
+                  {
+                    "name": "projects-tasks.txt",
+                    "size": 44609,
+                    "modified": "2026-01-21T18:52:26.084000"
+                  },
+                  {
                     "name": "time-tracking.md",
                     "size": 43292,
                     "modified": "2026-01-21T18:44:51.532015"
+                  },
+                  {
+                    "name": "messenger-chats.txt",
+                    "size": 42672,
+                    "modified": "2026-01-21T18:30:14.756000"
                   },
                   {
                     "name": "PLAN.md",
@@ -35011,6 +36399,16 @@
                     "name": "messenger-chats.md",
                     "size": 42672,
                     "modified": "2026-01-21T18:30:14.756115"
+                  },
+                  {
+                    "name": "calendar.txt",
+                    "size": 50275,
+                    "modified": "2026-01-21T19:09:58.797000"
+                  },
+                  {
+                    "name": "gantt.txt",
+                    "size": 44228,
+                    "modified": "2026-01-21T18:39:59.786000"
                   },
                   {
                     "name": "gantt.md",
@@ -35285,7 +36683,7 @@
           {
             "name": "video",
             "path": "video",
-            "file_count": 3,
+            "file_count": 5,
             "children": [],
             "files": [
               {
@@ -35302,12 +36700,58 @@
                 "name": "onboarding_checklist_ws2.0_script_uk.md",
                 "size": 9175,
                 "modified": "2026-01-22T16:59:59.453588"
+              },
+              {
+                "name": "onboarding_ws2.0_script_uk.docx",
+                "size": 15938,
+                "modified": "2025-12-11T13:45:26.052577"
+              },
+              {
+                "name": "onboarding_ws2.0_script_en.docx",
+                "size": 14933,
+                "modified": "2025-12-11T13:45:26.115004"
               }
             ],
             "is_empty": false
           }
         ],
-        "files": [],
+        "files": [
+          {
+            "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+            "size": 13431,
+            "modified": "2025-10-30T19:55:08"
+          },
+          {
+            "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+            "size": 1887,
+            "modified": "2025-10-30T19:55:22"
+          },
+          {
+            "name": "Presentation-ws-2.0.pdf",
+            "size": 155521135,
+            "modified": "2025-09-29T04:32:22"
+          },
+          {
+            "name": "Presentation-ws-2.0.pptx",
+            "size": 13363298,
+            "modified": "2025-09-29T04:54:20"
+          },
+          {
+            "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+            "size": 6000,
+            "modified": "2025-10-30T19:55:48"
+          },
+          {
+            "name": "comperative-table-ws-2.0-small.pdf",
+            "size": 11982815,
+            "modified": "2025-09-29T05:06:38"
+          },
+          {
+            "name": "comperative-table-ws-2.0.pdf",
+            "size": 59504031,
+            "modified": "2025-09-29T05:07:48"
+          }
+        ],
         "is_empty": false
       }
     }
