@@ -1038,10 +1038,12 @@
         // Update gaps tables - split by WS 1.0 and WS 2.0
         function updateGapsTable(data) {
             const allGaps = data.gaps || [];
+            console.log('Total gaps:', allGaps.length);
 
             // Split gaps by WS version
             const ws10Gaps = allGaps.filter(g => g.stage && g.stage.startsWith('WS 1.0'));
             const ws20Gaps = allGaps.filter(g => g.stage && g.stage.startsWith('WS 2.0'));
+            console.log('WS 1.0 gaps:', ws10Gaps.length, 'WS 2.0 gaps:', ws20Gaps.length);
 
             // Update counts
             document.getElementById('ws10GapsCount').textContent = ws10Gaps.length;
