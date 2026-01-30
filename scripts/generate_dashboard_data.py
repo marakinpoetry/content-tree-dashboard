@@ -18,6 +18,17 @@ SCRIPT_DIR = Path(__file__).parent
 REPO_DIR = SCRIPT_DIR.parent
 CONTENT_DIR = REPO_DIR / "Content"
 OUTPUT_PATH = REPO_DIR / "data.json"
+DRIVE_URL_MAPPING_PATH = SCRIPT_DIR / "drive_url_mapping.json"
+
+# Load Google Drive URL mapping (fallback for files without driveUrl in frontmatter)
+DRIVE_URL_MAPPING = {}
+if DRIVE_URL_MAPPING_PATH.exists():
+    try:
+        with open(DRIVE_URL_MAPPING_PATH, 'r', encoding='utf-8') as f:
+            DRIVE_URL_MAPPING = json.load(f)
+        print(f"Loaded {len(DRIVE_URL_MAPPING)} Google Drive URL mappings")
+    except Exception as e:
+        print(f"Warning: Could not load drive URL mapping: {e}")
 
 # Stages configuration
 STAGES = [
@@ -329,8 +340,11 @@ def scan_files(content_dir: Path) -> List[Dict[str, Any]]:
                 "snippet": extract_snippet(file_path),
             }
 
-            # Add drive URL if available
+            # Add drive URL if available (from frontmatter or mapping)
             drive_url = frontmatter.get("driveUrl") or frontmatter.get("drive_url")
+            if not drive_url:
+                # Try to get from Google Drive mapping
+                drive_url = DRIVE_URL_MAPPING.get(rel_path)
             if drive_url:
                 file_entry["driveUrl"] = drive_url
 
