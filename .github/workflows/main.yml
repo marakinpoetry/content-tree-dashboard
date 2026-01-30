@@ -1,11 +1,11 @@
 name: Sync Dashboard from Google Drive                                                                                                
                                                                                                                                         
-  on:                                                                                                                                   
+on:                                                                                                                                   
     schedule:                                                                                                                           
       - cron: '0 */3 * * *'                                                                                                             
     workflow_dispatch:                                                                                                                  
                                                                                                                                         
-  jobs:                                                                                                                                 
+jobs:                                                                                                                                 
     sync:                                                                                                                               
       runs-on: ubuntu-latest                                                                                                            
       steps:                                                                                                                            
