@@ -1,0 +1,13 @@
+{
+  "categories": {
+    "articles": {"required": 6},
+    "landings": {"required": 5},
+    "pr&media": {"required": 5},
+    "video": {"required": 9},
+    "smm": {"required": 20},
+    "product hunt kit": {"required": 7},
+    "webinars": {"required": 5},
+    "influencer": {"required": 10},
+    "cases": {"required": 3}
+  }
+}
