@@ -793,16 +793,30 @@
                         </div>
                         <div class="space-y-2">
                             ${sections.map(([section, count]) => {
-                                const maxExpected = 50; // Rough estimate for visualization
-                                const percentage = Math.min(100, (count / maxExpected) * 100);
+                                // Use section_progress for WS 2.0, fallback to estimate for WS 1.0
+                                const sectionProgress = stageData.section_progress?.[section];
+                                let percentage, required;
+                                if (sectionProgress) {
+                                    percentage = sectionProgress.fill_rate;
+                                    required = sectionProgress.required;
+                                } else {
+                                    // WS 1.0: estimate based on section type
+                                    const estimates = {
+                                        'Features': 100, 'Business_Types': 50, 'Competitors': 30,
+                                        'Pains': 30, 'PM_Education': 40
+                                    };
+                                    required = estimates[section] || 50;
+                                    percentage = Math.min(100, (count / required) * 100);
+                                }
+                                const barColor = percentage >= 100 ? 'green' : percentage >= 70 ? stage.color : percentage >= 40 ? 'yellow' : 'red';
                                 return `
                                 <div class="flex items-center justify-between text-xs">
                                     <span class="text-gray-600 truncate flex-1">${section}</span>
                                     <div class="flex items-center space-x-2 ml-2">
                                         <div class="w-16 bg-gray-200 rounded-full h-1.5">
-                                            <div class="bg-${stage.color}-600 h-1.5 rounded-full" style="width: ${percentage}%"></div>
+                                            <div class="bg-${barColor}-500 h-1.5 rounded-full" style="width: ${Math.min(100, percentage)}%"></div>
                                         </div>
-                                        <span class="font-medium text-gray-700 w-6 text-right">${count}</span>
+                                        <span class="font-medium text-gray-700 w-8 text-right">${count}/${required}</span>
                                     </div>
                                 </div>
                             `}).join('')}
