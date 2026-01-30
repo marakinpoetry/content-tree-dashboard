@@ -1834,9 +1834,11 @@
 
         function showFilePreviewFromTree(fileData) {
             // Try to find file in search index for full metadata
+            // Tree path is like "Content/WS 1.0/..." but search_index path is "WS 1.0/..."
+            const treePath = fileData.full_path.replace(/^Content\//, '');
             const fileInIndex = searchIndex.find(f =>
-                f.full_path === fileData.full_path ||
-                f.name === fileData.name
+                f.path === treePath ||
+                (f.name === fileData.name && treePath.includes(f.path.split('/').slice(0, -1).join('/')))
             );
 
             if (fileInIndex) {
