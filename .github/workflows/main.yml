@@ -1,5 +1,5 @@
 name: Sync Dashboard from Google Drive                                                                                                
-                                                                                                                                      
+                                                                                                                                        
 on:                                                                                                                                   
     schedule:                                                                                                                           
       - cron: '0 */3 * * *'                                                                                                             
@@ -17,14 +17,11 @@ jobs:
         - uses: AnimMouse/setup-rclone@v1                                                                                               
           with:                                                                                                                         
             rclone_config: ${{ secrets.RCLONE_CONFIG }}                                                                                 
-        - name: Sync from Google Drive                                                                                                  
-          run: rclone sync wscontentdrive:Content ./Content --exclude ".DS_Store" --exclude "*.tmp" --verbose                           
-        - name: Generate data.json                                                                                                      
-          run: python scripts/generate_dashboard_data.py                                                                                
-        - name: Commit and push                                                                                                         
-          run: |                                                                                                                        
+        - run: rclone sync wscontentdrive:Content ./Content --exclude ".DS_Store" --exclude "*.tmp" -v                                  
+        - run: python scripts/generate_dashboard_data.py                                                                                
+        - run: |                                                                                                                        
             git config user.name "GitHub Action"                                                                                        
             git config user.email "action@github.com"                                                                                   
             git add data.json                                                                                                           
-            git diff --staged --quiet || git commit -m "Auto-update $(date -u +%Y-%m-%dT%H:%M:%SZ)"                                     
-           git push
+            git diff --staged --quiet || git commit -m "Auto-update"                                                                    
+            git push
