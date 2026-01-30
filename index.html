@@ -1265,8 +1265,9 @@
                         const dateStr = date.toLocaleDateString('uk-UA', { day: 'numeric', month: 'short' });
 
                         // Get driveUrl from search index if available
+                        const folderPath = currentFolderData.path === '.' ? stage : `${stage}/${currentFolderData.path}`;
                         const searchFile = (dashboardData.search_index || []).find(
-                            f => f.name === file.name && f.path.includes(currentFolderData.path)
+                            f => f.name === file.name && f.path.startsWith(folderPath)
                         );
                         const driveUrl = searchFile?.driveUrl || '';
 
