@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_update": "2026-01-30T11:29:19.036520",
+    "last_update": "2026-01-30T11:32:49.841463",
     "total_files": 599,
     "total_folders": 1500,
     "filled_folders": 169,
@@ -4511,6 +4511,32 @@
         "business_impact": [
           "Critical for product launch",
           "4 items still needed"
+        ],
+        "missing_items": [],
+        "score": 50
+      }
+    },
+    {
+      "path": "WS 2.0 Release/articles",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "Articles",
+      "feature": "Articles",
+      "content_type": "Articles",
+      "severity": "medium",
+      "priority_score": 50,
+      "fill_rate": 71.4,
+      "current_count": 15,
+      "ideal_count": 21,
+      "missing_count": 6,
+      "message": "Articles: 15/21 (6 items needed)",
+      "rationale": {
+        "reasons": [
+          "WS 2.0 Release requires 21 articles"
+        ],
+        "business_impact": [
+          "Critical for product launch",
+          "6 items still needed"
         ],
         "missing_items": [],
         "score": 50
@@ -29715,7 +29741,8 @@
         ],
         "files": [],
         "is_empty": false
-      }
+      },
+      "section_progress": {}
     },
     "WS 1.0/Trial": {
       "total_files": 41,
@@ -32731,7 +32758,8 @@
         ],
         "files": [],
         "is_empty": false
-      }
+      },
+      "section_progress": {}
     },
     "WS 1.0/Success_Client": {
       "total_files": 1,
@@ -35536,7 +35564,8 @@
         ],
         "files": [],
         "is_empty": false
-      }
+      },
+      "section_progress": {}
     },
     "WS 2.0 Release": {
       "total_files": 112,
@@ -36488,6 +36517,48 @@
           }
         ],
         "is_empty": false
+      },
+      "section_progress": {
+        "Other files": {
+          "current": 7,
+          "required": 7,
+          "fill_rate": 100
+        },
+        "video": {
+          "current": 5,
+          "required": 8,
+          "fill_rate": 62.5
+        },
+        "articles": {
+          "current": 15,
+          "required": 21,
+          "fill_rate": 71.4
+        },
+        "smm": {
+          "current": 16,
+          "required": 20,
+          "fill_rate": 80.0
+        },
+        "pr&media": {
+          "current": 6,
+          "required": 5,
+          "fill_rate": 100
+        },
+        "landings": {
+          "current": 17,
+          "required": 5,
+          "fill_rate": 100
+        },
+        "product hunt kit": {
+          "current": 10,
+          "required": 10,
+          "fill_rate": 100
+        },
+        "ads": {
+          "current": 36,
+          "required": 6,
+          "fill_rate": 100
+        }
       }
     }
   }
