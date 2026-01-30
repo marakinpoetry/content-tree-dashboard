@@ -1094,23 +1094,42 @@
             }).join('');
         }
 
-        // Refresh data
+        // Refresh data - works on both localhost and production
         async function refreshData() {
             const btn = document.getElementById('refreshBtn');
             const icon = document.getElementById('refreshIcon');
+            const isLocalhost = window.location.hostname === 'localhost'
+                             || window.location.hostname === '127.0.0.1';
 
             btn.disabled = true;
             icon.classList.add('animate-spin');
 
             try {
-                const response = await fetch('http://localhost:8080/api/refresh', {
-                    method: 'POST'
-                });
+                let newData;
 
-                const result = await response.json();
+                if (isLocalhost) {
+                    // Localhost: try local server first, fallback to static file
+                    try {
+                        const response = await fetch('http://localhost:8080/api/refresh', {
+                            method: 'POST'
+                        });
+                        const result = await response.json();
+                        if (result.success) {
+                            newData = result.data;
+                        }
+                    } catch (e) {
+                        // Fallback to static data.json
+                        const response = await fetch('data.json?t=' + Date.now());
+                        newData = await response.json();
+                    }
+                } else {
+                    // Production: fetch fresh data.json (cache-busted)
+                    const response = await fetch('data.json?t=' + Date.now());
+                    newData = await response.json();
+                }
 
-                if (result.success) {
-                    dashboardData = result.data;
+                if (newData) {
+                    dashboardData = newData;
                     updateDashboard(dashboardData);
 
                     // Auto-refresh fullscreen tree if it's open
@@ -1121,11 +1140,11 @@
 
                     console.log('Dashboard updated successfully');
                 } else {
-                    alert('Помилка оновлення: ' + result.message);
+                    alert('Помилка оновлення: дані не отримано');
                 }
             } catch (error) {
                 console.error('Refresh failed:', error);
-                alert('Сервер не запущено.\n\nЗапустіть сервер командою:\n./start_dashboard.sh\n\nПотім натисніть "Оновити" знову.');
+                alert('Помилка оновлення даних. Спробуйте перезавантажити сторінку.');
             } finally {
                 btn.disabled = false;
                 icon.classList.remove('animate-spin');
