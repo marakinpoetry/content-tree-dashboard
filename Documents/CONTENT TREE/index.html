@@ -739,9 +739,9 @@
             document.getElementById('publishedContent').textContent = published;
             document.getElementById('weekGrowth').textContent = data.growth_trend.last_week;
 
-            // Card 3: Not Published (WS 2.0 Release)
-            const notPublished = meta.not_published_count || 0;
-            document.getElementById('notPublishedContent').textContent = notPublished;
+            // Card 3: WS 2.0 Release content
+            const ws2Files = data.by_stage['WS 2.0 Release'] || 0;
+            document.getElementById('notPublishedContent').textContent = ws2Files;
 
             // Card 4: Growth
             document.getElementById('monthGrowth').textContent = data.growth_trend.last_month;
