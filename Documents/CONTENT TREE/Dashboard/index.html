@@ -699,7 +699,7 @@
         // Load dashboard data
         async function loadData() {
             try {
-                const response = await fetch('data.json');
+                const response = await fetch('data.json?t=' + Date.now());
                 if (!response.ok) {
                     throw new Error('data.json not found. Please run: python update_dashboard.py');
                 }
