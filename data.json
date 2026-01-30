@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "last_update": "2026-01-30T11:25:13.956684",
-    "total_files": 608,
-    "total_folders": 1504,
-    "filled_folders": 170,
-    "empty_folders": 1200,
+    "last_update": "2026-01-30T11:29:19.036520",
+    "total_files": 599,
+    "total_folders": 1500,
+    "filled_folders": 169,
+    "empty_folders": 1198,
     "fill_rate": 11.3,
     "target_files": "Fill all folders",
     "coverage_percent": 11.3,
     "smart_analysis_enabled": true,
     "published_count": 487,
-    "not_published_count": 121
+    "not_published_count": 112
   },
   "by_stage": {
     "WS 1.0/Pre-Registration": 445,
     "WS 1.0/Trial": 41,
     "WS 1.0/Success_Client": 1,
-    "WS 2.0 Release": 121
+    "WS 2.0 Release": 112
   },
   "by_content_type": {
     "Landings": 21,
@@ -24,31 +24,31 @@
     "Videos": 96,
     "Static Ads": 72,
     "Ads": 3,
-    "Other": 41,
+    "Other": 32,
     "Lead Magnets": 3,
     "SMM": 17
   },
   "by_language": {
     "Ukrainian": 228,
-    "English": 229,
+    "English": 228,
     "Russian": 68,
     "German": 17,
     "Polish": 5,
     "French": 3,
     "Spanish": 1,
-    "Unknown": 57
+    "Unknown": 49
   },
   "by_status": {
     "Published": 52,
     "Idea/Brief": 440,
     "Review": 44,
-    "Approved": 70,
+    "Approved": 61,
     "Blocked": 2
   },
   "growth_trend": {
     "last_week": 33,
-    "last_month": 105,
-    "weekly_avg": 24.4
+    "last_month": 96,
+    "weekly_avg": 22.3
   },
   "gaps": [
     {
@@ -19320,189 +19320,6 @@
     },
     {
       "id": "WS 2.0 Release_546",
-      "name": "time-tracking.txt",
-      "display_name": "Time-tracking.txt",
-      "path": "WS 2.0 Release/landigns/features/time-tracking.txt",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/time-tracking.txt",
-      "stage": "WS 2.0 Release",
-      "section": "WS 2.0 Release",
-      "feature": "features",
-      "content_type": "Other",
-      "language": "Unknown",
-      "status": "Approved",
-      "size": 43292,
-      "modified": "2026-01-21T18:44:51.532000",
-      "keywords": [
-        "time",
-        "tracking.txt"
-      ],
-      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
-      "driveUrl": "https://drive.google.com/file/d/1LlpkCWaLAQOpZt-o5rakb-sqRUXagqdm/view"
-    },
-    {
-      "id": "WS 2.0 Release_547",
-      "name": "dashboard.txt",
-      "display_name": "Dashboard.txt",
-      "path": "WS 2.0 Release/landigns/features/dashboard.txt",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/dashboard.txt",
-      "stage": "WS 2.0 Release",
-      "section": "WS 2.0 Release",
-      "feature": "features",
-      "content_type": "Other",
-      "language": "Unknown",
-      "status": "Approved",
-      "size": 45753,
-      "modified": "2026-01-21T18:52:38.843000",
-      "keywords": [
-        "dashboard.txt"
-      ],
-      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
-      "driveUrl": "https://drive.google.com/file/d/1zjzK8XFvyxN6ie-KYPvl3x258Vi57vUn/view"
-    },
-    {
-      "id": "WS 2.0 Release_548",
-      "name": "kanban.txt",
-      "display_name": "Kanban.txt",
-      "path": "WS 2.0 Release/landigns/features/kanban.txt",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/kanban.txt",
-      "stage": "WS 2.0 Release",
-      "section": "WS 2.0 Release",
-      "feature": "features",
-      "content_type": "Other",
-      "language": "Unknown",
-      "status": "Approved",
-      "size": 43747,
-      "modified": "2026-01-21T18:37:28.767000",
-      "keywords": [
-        "kanban.txt"
-      ],
-      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
-      "driveUrl": "https://drive.google.com/file/d/15F_UA1d6Iw51ULhCo3eulSUtNgimiRmT/view"
-    },
-    {
-      "id": "WS 2.0 Release_549",
-      "name": "reports.txt",
-      "display_name": "Reports.txt",
-      "path": "WS 2.0 Release/landigns/features/reports.txt",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/reports.txt",
-      "stage": "WS 2.0 Release",
-      "section": "WS 2.0 Release",
-      "feature": "features",
-      "content_type": "Other",
-      "language": "Unknown",
-      "status": "Approved",
-      "size": 45010,
-      "modified": "2026-01-21T18:55:39.218000",
-      "keywords": [
-        "reports.txt"
-      ],
-      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
-      "driveUrl": "https://drive.google.com/file/d/17TyHrErkL_xNvj1CX_4fqy4_RZF01hmh/view"
-    },
-    {
-      "id": "WS 2.0 Release_550",
-      "name": "projects-tasks.txt",
-      "display_name": "Projects-tasks.txt",
-      "path": "WS 2.0 Release/landigns/features/projects-tasks.txt",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/projects-tasks.txt",
-      "stage": "WS 2.0 Release",
-      "section": "WS 2.0 Release",
-      "feature": "features",
-      "content_type": "Other",
-      "language": "Unknown",
-      "status": "Approved",
-      "size": 44609,
-      "modified": "2026-01-21T18:52:26.084000",
-      "keywords": [
-        "projects",
-        "tasks.txt"
-      ],
-      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
-      "driveUrl": "https://drive.google.com/file/d/19C46qhY1VDLKu347AKXgo5U3yKTtoYge/view"
-    },
-    {
-      "id": "WS 2.0 Release_551",
-      "name": "messenger-chats.txt",
-      "display_name": "Messenger-chats.txt",
-      "path": "WS 2.0 Release/landigns/features/messenger-chats.txt",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/messenger-chats.txt",
-      "stage": "WS 2.0 Release",
-      "section": "WS 2.0 Release",
-      "feature": "features",
-      "content_type": "Other",
-      "language": "Unknown",
-      "status": "Approved",
-      "size": 42672,
-      "modified": "2026-01-21T18:30:14.756000",
-      "keywords": [
-        "messenger",
-        "chats.txt"
-      ],
-      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
-      "driveUrl": "https://drive.google.com/file/d/1uRTiUIFdqjIwSOYJUoA3AOL1CoDqjRs7/view"
-    },
-    {
-      "id": "WS 2.0 Release_552",
-      "name": "PLAN.md",
-      "display_name": "Plan",
-      "path": "WS 2.0 Release/landigns/features/PLAN.md",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/PLAN.md",
-      "stage": "WS 2.0 Release",
-      "section": "WS 2.0 Release",
-      "feature": "features",
-      "content_type": "Other",
-      "language": "English",
-      "status": "Approved",
-      "size": 5330,
-      "modified": "2026-01-21T19:21:39.989000",
-      "keywords": [
-        "plan"
-      ],
-      "snippet": "Створити серію feature pages англійською мовою для Worksection 2.0, використовуючи оновлений шаблон clickup-template.txt та контент з knowledge base.",
-      "driveUrl": "https://drive.google.com/file/d/17wRmJ5euCQk1Ln23CTbVqIRzKMgGwYQX/view"
-    },
-    {
-      "id": "WS 2.0 Release_553",
-      "name": "calendar.txt",
-      "display_name": "Calendar.txt",
-      "path": "WS 2.0 Release/landigns/features/calendar.txt",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/calendar.txt",
-      "stage": "WS 2.0 Release",
-      "section": "WS 2.0 Release",
-      "feature": "features",
-      "content_type": "Other",
-      "language": "Unknown",
-      "status": "Approved",
-      "size": 50275,
-      "modified": "2026-01-21T19:09:58.797000",
-      "keywords": [
-        "calendar.txt"
-      ],
-      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
-      "driveUrl": "https://drive.google.com/file/d/1iSAGhnnTqTq2jwVEXvB075rW1hQjh1El/view"
-    },
-    {
-      "id": "WS 2.0 Release_554",
-      "name": "gantt.txt",
-      "display_name": "Gantt.txt",
-      "path": "WS 2.0 Release/landigns/features/gantt.txt",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/landigns/features/gantt.txt",
-      "stage": "WS 2.0 Release",
-      "section": "WS 2.0 Release",
-      "feature": "features",
-      "content_type": "Other",
-      "language": "Unknown",
-      "status": "Approved",
-      "size": 44228,
-      "modified": "2026-01-21T18:39:59.786000",
-      "keywords": [
-        "gantt.txt"
-      ],
-      "snippet": "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗",
-      "driveUrl": "https://drive.google.com/file/d/1-D4_McwtqHr2yQ5iGggFpm-gzzi2aYxM/view"
-    },
-    {
-      "id": "WS 2.0 Release_555",
       "name": "projects-tasks.md",
       "display_name": "Projects-tasks",
       "path": "WS 2.0 Release/landings/features/projects-tasks.md",
@@ -19523,7 +19340,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_556",
+      "id": "WS 2.0 Release_547",
       "name": "reports.md",
       "display_name": "Reports",
       "path": "WS 2.0 Release/landings/features/reports.md",
@@ -19543,7 +19360,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_557",
+      "id": "WS 2.0 Release_548",
       "name": "calendar.md",
       "display_name": "Calendar",
       "path": "WS 2.0 Release/landings/features/calendar.md",
@@ -19563,7 +19380,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_558",
+      "id": "WS 2.0 Release_549",
       "name": "dashboard.md",
       "display_name": "Dashboard",
       "path": "WS 2.0 Release/landings/features/dashboard.md",
@@ -19583,7 +19400,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_559",
+      "id": "WS 2.0 Release_550",
       "name": "time-tracking.txt",
       "display_name": "Time-tracking.txt",
       "path": "WS 2.0 Release/landings/features/time-tracking.txt",
@@ -19604,7 +19421,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_560",
+      "id": "WS 2.0 Release_551",
       "name": "dashboard.txt",
       "display_name": "Dashboard.txt",
       "path": "WS 2.0 Release/landings/features/dashboard.txt",
@@ -19624,7 +19441,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_561",
+      "id": "WS 2.0 Release_552",
       "name": "kanban.md",
       "display_name": "Kanban",
       "path": "WS 2.0 Release/landings/features/kanban.md",
@@ -19644,7 +19461,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_562",
+      "id": "WS 2.0 Release_553",
       "name": "kanban.txt",
       "display_name": "Kanban.txt",
       "path": "WS 2.0 Release/landings/features/kanban.txt",
@@ -19664,7 +19481,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_563",
+      "id": "WS 2.0 Release_554",
       "name": "reports.txt",
       "display_name": "Reports.txt",
       "path": "WS 2.0 Release/landings/features/reports.txt",
@@ -19684,7 +19501,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_564",
+      "id": "WS 2.0 Release_555",
       "name": "projects-tasks.txt",
       "display_name": "Projects-tasks.txt",
       "path": "WS 2.0 Release/landings/features/projects-tasks.txt",
@@ -19705,7 +19522,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_565",
+      "id": "WS 2.0 Release_556",
       "name": "time-tracking.md",
       "display_name": "Time-tracking",
       "path": "WS 2.0 Release/landings/features/time-tracking.md",
@@ -19726,7 +19543,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_566",
+      "id": "WS 2.0 Release_557",
       "name": "messenger-chats.txt",
       "display_name": "Messenger-chats.txt",
       "path": "WS 2.0 Release/landings/features/messenger-chats.txt",
@@ -19747,7 +19564,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_567",
+      "id": "WS 2.0 Release_558",
       "name": "PLAN.md",
       "display_name": "Plan",
       "path": "WS 2.0 Release/landings/features/PLAN.md",
@@ -19767,7 +19584,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_568",
+      "id": "WS 2.0 Release_559",
       "name": "messenger-chats.md",
       "display_name": "Messenger-chats",
       "path": "WS 2.0 Release/landings/features/messenger-chats.md",
@@ -19788,7 +19605,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_569",
+      "id": "WS 2.0 Release_560",
       "name": "calendar.txt",
       "display_name": "Calendar.txt",
       "path": "WS 2.0 Release/landings/features/calendar.txt",
@@ -19808,7 +19625,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_570",
+      "id": "WS 2.0 Release_561",
       "name": "gantt.txt",
       "display_name": "Gantt.txt",
       "path": "WS 2.0 Release/landings/features/gantt.txt",
@@ -19828,7 +19645,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_571",
+      "id": "WS 2.0 Release_562",
       "name": "gantt.md",
       "display_name": "Gantt",
       "path": "WS 2.0 Release/landings/features/gantt.md",
@@ -19848,7 +19665,7 @@
       "driveUrl": ""
     },
     {
-      "id": "WS 2.0 Release_572",
+      "id": "WS 2.0 Release_563",
       "name": "Текст — Як українська команда створила Worksection 2.0.md",
       "display_name": "Текст — Як Українська Команда Створила Worksection 2.0",
       "path": "WS 2.0 Release/pr&media/Текст — Як українська команда створила Worksection 2.0.md",
@@ -19873,7 +19690,7 @@
       "driveUrl": "https://drive.google.com/file/d/1f4FHk3jbJ9wbs_80GTEwnO1Js9ymbY6P/view"
     },
     {
-      "id": "WS 2.0 Release_573",
+      "id": "WS 2.0 Release_564",
       "name": "Текст — Як український таск-менеджер Worksection не пішов шляхом венчурних інвестицій — і виграв.md",
       "display_name": "Текст — Як Український Таск-менеджер Worksection Не Пішов Шляхом Венчурних Інвестицій — І Виграв",
       "path": "WS 2.0 Release/pr&media/Текст — Як український таск-менеджер Worksection не пішов шляхом венчурних інвестицій — і виграв.md",
@@ -19902,7 +19719,7 @@
       "driveUrl": "https://drive.google.com/file/d/1dBxllUcliqyhNbCz0g-L8bZ4pw23ByIp/view"
     },
     {
-      "id": "WS 2.0 Release_574",
+      "id": "WS 2.0 Release_565",
       "name": "Текст — Створюємо глобальний SaaS без інвесторів_ уроки Worksection.md",
       "display_name": "Текст — Створюємо Глобальний Saas Без Інвесторів Уроки Worksection",
       "path": "WS 2.0 Release/pr&media/Текст — Створюємо глобальний SaaS без інвесторів_ уроки Worksection.md",
@@ -19929,7 +19746,7 @@
       "driveUrl": "https://drive.google.com/file/d/1XdAF1U2cE9KqE9MwrslQWr65a1OG0v6c/view"
     },
     {
-      "id": "WS 2.0 Release_575",
+      "id": "WS 2.0 Release_566",
       "name": "Прес-реліз про вихід на Product Hunt.md",
       "display_name": "Прес-реліз Про Вихід На Product Hunt",
       "path": "WS 2.0 Release/pr&media/Прес-реліз про вихід на Product Hunt.md",
@@ -19954,7 +19771,7 @@
       "driveUrl": "https://drive.google.com/file/d/16aUXCBwsysyZnGvRiOw8eepw9Xxpii-Y/view"
     },
     {
-      "id": "WS 2.0 Release_576",
+      "id": "WS 2.0 Release_567",
       "name": "Текст — Український таск-менеджер Worksection представив оновлену версію 2.0.md",
       "display_name": "Текст — Український Таск-менеджер Worksection Представив Оновлену Версію 2.0",
       "path": "WS 2.0 Release/pr&media/Текст — Український таск-менеджер Worksection представив оновлену версію 2.0.md",
@@ -19982,7 +19799,7 @@
       "driveUrl": "https://drive.google.com/file/d/1ebaZ_rSYbcqHGLkTE0YTiQpwAHY2-x8M/view"
     },
     {
-      "id": "WS 2.0 Release_577",
+      "id": "WS 2.0 Release_568",
       "name": "Текст — Worksection 2.0_ новий погляд на управління проєктами для сучасних команд.md",
       "display_name": "Текст — Worksection 2.0 Новий Погляд На Управління Проєктами Для Сучасних Команд",
       "path": "WS 2.0 Release/pr&media/Текст — Worksection 2.0_ новий погляд на управління проєктами для сучасних команд.md",
@@ -20011,7 +19828,7 @@
       "driveUrl": "https://drive.google.com/file/d/1ea-un_HV8mcNi0QBVfXIakB83KuAQ_GU/view"
     },
     {
-      "id": "WS 2.0 Release_578",
+      "id": "WS 2.0 Release_569",
       "name": "Product Hunt — Сценарії відповідей на критичні коментарі.md",
       "display_name": "Product Hunt — Сценарії Відповідей На Критичні Коментарі",
       "path": "WS 2.0 Release/product hunt kit/answer scenarios/Product Hunt — Сценарії відповідей на критичні коментарі.md",
@@ -20036,7 +19853,7 @@
       "driveUrl": "https://drive.google.com/file/d/1GSVz12vk7_0f3bo3-zrJaV8ZGsHzXWjk/view"
     },
     {
-      "id": "WS 2.0 Release_579",
+      "id": "WS 2.0 Release_570",
       "name": "Product Hunt — Retrospective Blog.md",
       "display_name": "Product Hunt — Retrospective Blog",
       "path": "WS 2.0 Release/product hunt kit/articles/Product Hunt — Retrospective Blog.md",
@@ -20059,7 +19876,7 @@
       "driveUrl": "https://drive.google.com/file/d/1ltLUljDc3x3UNBY-8AWA_JrCBsMqXQF-/view"
     },
     {
-      "id": "WS 2.0 Release_580",
+      "id": "WS 2.0 Release_571",
       "name": "Product Hunt — DM-повідомлення.md",
       "display_name": "Product Hunt — Dm-повідомлення",
       "path": "WS 2.0 Release/product hunt kit/direct messages/Product Hunt — DM-повідомлення.md",
@@ -20081,7 +19898,7 @@
       "driveUrl": "https://drive.google.com/file/d/13dEi1k5x65j03UMZvDXuYqyMnRZaqF4p/view"
     },
     {
-      "id": "WS 2.0 Release_581",
+      "id": "WS 2.0 Release_572",
       "name": "Product Hunt — TESTIMONIALS.md",
       "display_name": "Product Hunt — Testimonials",
       "path": "WS 2.0 Release/product hunt kit/direct messages/Product Hunt — TESTIMONIALS.md",
@@ -20103,7 +19920,7 @@
       "driveUrl": "https://drive.google.com/file/d/12loP9iYnaB5WYw_-7Gqc09gKVkqbdUZX/view"
     },
     {
-      "id": "WS 2.0 Release_582",
+      "id": "WS 2.0 Release_573",
       "name": "PRODUCT HUNT — EMAIL CAMPAIGN.md",
       "display_name": "Product Hunt — Email Campaign",
       "path": "WS 2.0 Release/product hunt kit/emaiils/PRODUCT HUNT — EMAIL CAMPAIGN.md",
@@ -20126,7 +19943,7 @@
       "driveUrl": "https://drive.google.com/file/d/1rq9TNiBViLOYNqzHOgphiLVSRVVhS6wp/view"
     },
     {
-      "id": "WS 2.0 Release_583",
+      "id": "WS 2.0 Release_574",
       "name": "Product Hunt — Launch Day Selection Strategy.md",
       "display_name": "Product Hunt — Launch Day Selection Strategy",
       "path": "WS 2.0 Release/product hunt kit/launch day/Product Hunt — Launch Day Selection Strategy.md",
@@ -20151,7 +19968,7 @@
       "driveUrl": "https://drive.google.com/file/d/171rGWwFjx98MO5zTgk-BsEuOf_XJWHpm/view"
     },
     {
-      "id": "WS 2.0 Release_584",
+      "id": "WS 2.0 Release_575",
       "name": "Product Hunt — Retrospective Post.md",
       "display_name": "Product Hunt — Retrospective Post",
       "path": "WS 2.0 Release/product hunt kit/posts/Product Hunt — Retrospective Post.md",
@@ -20174,7 +19991,7 @@
       "driveUrl": "https://drive.google.com/file/d/1wIw-cqQzd6eFOffG9vnF-w8jZI2eugDX/view"
     },
     {
-      "id": "WS 2.0 Release_585",
+      "id": "WS 2.0 Release_576",
       "name": "Product Hunt — Тизер-пости для LinkedIn, X, Telegram, Instagram.md",
       "display_name": "Product Hunt — Тизер-пости Для Linkedin, X, Telegram, Instagram",
       "path": "WS 2.0 Release/product hunt kit/posts/Product Hunt — Тизер-пости для LinkedIn, X, Telegram, Instagram.md",
@@ -20201,7 +20018,7 @@
       "driveUrl": "https://drive.google.com/file/d/1eIX4NbtvNBOf5QM_mHxHoAb3-jw700tJ/view"
     },
     {
-      "id": "WS 2.0 Release_586",
+      "id": "WS 2.0 Release_577",
       "name": "Product Hunt — GALLERY SCREENSHOTS.md",
       "display_name": "Product Hunt — Gallery Screenshots",
       "path": "WS 2.0 Release/product hunt kit/web page/Product Hunt — GALLERY SCREENSHOTS.md",
@@ -20224,7 +20041,7 @@
       "driveUrl": "https://drive.google.com/file/d/1RHXuYldQuxtj4Gnq7u-OdS6HSSGs4rnv/view"
     },
     {
-      "id": "WS 2.0 Release_587",
+      "id": "WS 2.0 Release_578",
       "name": "Product Hunt — Landing Page.md",
       "display_name": "Product Hunt — Landing Page",
       "path": "WS 2.0 Release/product hunt kit/web page/Product Hunt — Landing Page.md",
@@ -20247,7 +20064,7 @@
       "driveUrl": "https://drive.google.com/file/d/1s-QFZhlamA5RYplSuvJZdK-kIALzbSY3/view"
     },
     {
-      "id": "WS 2.0 Release_588",
+      "id": "WS 2.0 Release_579",
       "name": "Пост — Worksection_ Тоді vs Зараз .md",
       "display_name": "Пост — Worksection Тоді Vs Зараз",
       "path": "WS 2.0 Release/smm/Пост — Worksection_ Тоді vs Зараз .md",
@@ -20270,7 +20087,7 @@
       "driveUrl": "https://drive.google.com/file/d/1FxlJSz6rKg1e_36jeBiEZ_1kLM_l4mPw/view"
     },
     {
-      "id": "WS 2.0 Release_589",
+      "id": "WS 2.0 Release_580",
       "name": "Пост — Worksection 2.0_ що нового .md",
       "display_name": "Пост — Worksection 2.0 Що Нового",
       "path": "WS 2.0 Release/smm/Пост — Worksection 2.0_ що нового .md",
@@ -20293,7 +20110,7 @@
       "driveUrl": "https://drive.google.com/file/d/1RPvvd303M2Ksz3Khu56CEpflcnSlb8HK/view"
     },
     {
-      "id": "WS 2.0 Release_590",
+      "id": "WS 2.0 Release_581",
       "name": "Пост — Розумні сповіщення у Worksection 2.0.md",
       "display_name": "Пост — Розумні Сповіщення У Worksection 2.0",
       "path": "WS 2.0 Release/smm/Пост — Розумні сповіщення у Worksection 2.0.md",
@@ -20317,7 +20134,7 @@
       "driveUrl": "https://drive.google.com/file/d/1GDbhqVpYMyfabNRw14-ADwwU4-5wvPS1/view"
     },
     {
-      "id": "WS 2.0 Release_591",
+      "id": "WS 2.0 Release_582",
       "name": "Пост — Worksection 2.0 запущено.md",
       "display_name": "Пост — Worksection 2.0 Запущено",
       "path": "WS 2.0 Release/smm/Пост — Worksection 2.0 запущено.md",
@@ -20340,7 +20157,7 @@
       "driveUrl": "https://drive.google.com/file/d/1hHBjrxYqE6qlxiSZ_BT27FGx6M0P6QvG/view"
     },
     {
-      "id": "WS 2.0 Release_592",
+      "id": "WS 2.0 Release_583",
       "name": "Пост — Worksection 2.0 — гнучкість для всієї команди.md",
       "display_name": "Пост — Worksection 2.0 — Гнучкість Для Всієї Команди",
       "path": "WS 2.0 Release/smm/Пост — Worksection 2.0 — гнучкість для всієї команди.md",
@@ -20366,7 +20183,7 @@
       "driveUrl": "https://drive.google.com/file/d/1sDz72JnDhZxeOJXGwVAw5CDVWNMakyCj/view"
     },
     {
-      "id": "WS 2.0 Release_593",
+      "id": "WS 2.0 Release_584",
       "name": "Пост — Запрошення на вебінар [Шаблон].md",
       "display_name": "Пост — Запрошення На Вебінар [шаблон]",
       "path": "WS 2.0 Release/smm/Пост — Запрошення на вебінар [Шаблон].md",
@@ -20389,7 +20206,7 @@
       "driveUrl": "https://drive.google.com/file/d/1_GbHXe8WOfo-s-Vql8gg8JzF2tMM95wx/view"
     },
     {
-      "id": "WS 2.0 Release_594",
+      "id": "WS 2.0 Release_585",
       "name": "Пост — Worksection 2.0 — Створено в Україні 🇺🇦 Використовується у світі 🌍.md",
       "display_name": "Пост — Worksection 2.0 — Створено В Україні 🇺🇦 Використовується У Світі 🌍",
       "path": "WS 2.0 Release/smm/Пост — Worksection 2.0 — Створено в Україні 🇺🇦 Використовується у світі 🌍.md",
@@ -20415,7 +20232,7 @@
       "driveUrl": "https://drive.google.com/file/d/1SL0Ec3H6W0y_nzhYF0AX1rRFEjUuiZtQ/view"
     },
     {
-      "id": "WS 2.0 Release_595",
+      "id": "WS 2.0 Release_586",
       "name": "Пост — 3 ключові проблеми проєктного менеджменту.md",
       "display_name": "Пост — 3 Ключові Проблеми Проєктного Менеджменту",
       "path": "WS 2.0 Release/smm/Пост — 3 ключові проблеми проєктного менеджменту.md",
@@ -20439,7 +20256,7 @@
       "driveUrl": "https://drive.google.com/file/d/1psCxhhIU4-wy-GM48TgogXeTmgNtfdON/view"
     },
     {
-      "id": "WS 2.0 Release_596",
+      "id": "WS 2.0 Release_587",
       "name": "Пост — Найбільш очікувана фіча (вбудований месенджер).md",
       "display_name": "Пост — Найбільш Очікувана Фіча (вбудований Месенджер)",
       "path": "WS 2.0 Release/smm/Пост — Найбільш очікувана фіча (вбудований месенджер).md",
@@ -20464,7 +20281,7 @@
       "driveUrl": "https://drive.google.com/file/d/1waGJPJSkllaSd-_MqBas4yCEwlW4r6vU/view"
     },
     {
-      "id": "WS 2.0 Release_597",
+      "id": "WS 2.0 Release_588",
       "name": "Серія сторіс — Щось нове наближається… 👀 (1).md",
       "display_name": "Серія Сторіс — Щось Нове Наближається… 👀 (1)",
       "path": "WS 2.0 Release/smm/Серія сторіс — Щось нове наближається… 👀 (1).md",
@@ -20489,7 +20306,7 @@
       "driveUrl": "https://drive.google.com/file/d/1LM2qStb4oS92gjTNVxFi_QQx0aG9JulL/view"
     },
     {
-      "id": "WS 2.0 Release_598",
+      "id": "WS 2.0 Release_589",
       "name": "Пост — Гнучкі шаблони задач і проєктів.md",
       "display_name": "Пост — Гнучкі Шаблони Задач І Проєктів",
       "path": "WS 2.0 Release/smm/Пост — Гнучкі шаблони задач і проєктів.md",
@@ -20513,7 +20330,7 @@
       "driveUrl": "https://drive.google.com/file/d/1sR3I9sX9yEPfv0rG50KdyzoHxa_m793k/view"
     },
     {
-      "id": "WS 2.0 Release_599",
+      "id": "WS 2.0 Release_590",
       "name": "Пост — План дня у WS 2.0.md",
       "display_name": "Пост — План Дня У Ws 2.0",
       "path": "WS 2.0 Release/smm/Пост — План дня у WS 2.0.md",
@@ -20536,7 +20353,7 @@
       "driveUrl": "https://drive.google.com/file/d/1E39Lip5JsnwkIkOg1BgPpNOY76cv8-QM/view"
     },
     {
-      "id": "WS 2.0 Release_600",
+      "id": "WS 2.0 Release_591",
       "name": "Пост — Швидкий старт у Worksection 2.0.md",
       "display_name": "Пост — Швидкий Старт У Worksection 2.0",
       "path": "WS 2.0 Release/smm/Пост — Швидкий старт у Worksection 2.0.md",
@@ -20560,7 +20377,7 @@
       "driveUrl": "https://drive.google.com/file/d/1nO27r3_L7yuXZtOqO0ylkSvH5koPs2Fv/view"
     },
     {
-      "id": "WS 2.0 Release_601",
+      "id": "WS 2.0 Release_592",
       "name": "Пост — Зворотний відлік до релізу WS 2.0.md",
       "display_name": "Пост — Зворотний Відлік До Релізу Ws 2.0",
       "path": "WS 2.0 Release/smm/Пост — Зворотний відлік до релізу WS 2.0.md",
@@ -20584,7 +20401,7 @@
       "driveUrl": "https://drive.google.com/file/d/122N8AsYXoZfgvSqjtyiOLiJO5Qtx7qFI/view"
     },
     {
-      "id": "WS 2.0 Release_602",
+      "id": "WS 2.0 Release_593",
       "name": "Пост — Старт закритого бета-тестування.md",
       "display_name": "Пост — Старт Закритого Бета-тестування",
       "path": "WS 2.0 Release/smm/Пост — Старт закритого бета-тестування.md",
@@ -20608,7 +20425,7 @@
       "driveUrl": "https://drive.google.com/file/d/1milR_gm_9df4YefoPGjRV2egwoKCBkaR/view"
     },
     {
-      "id": "WS 2.0 Release_603",
+      "id": "WS 2.0 Release_594",
       "name": "Пост — Як Worksection 2.0 допомагає креативним агенціям.md",
       "display_name": "Пост — Як Worksection 2.0 Допомагає Креативним Агенціям",
       "path": "WS 2.0 Release/smm/Пост — Як Worksection 2.0 допомагає креативним агенціям.md",
@@ -20633,7 +20450,7 @@
       "driveUrl": "https://drive.google.com/file/d/1muuEOs6jYkxQTrPffWVnRTzYrNASGzTR/view"
     },
     {
-      "id": "WS 2.0 Release_604",
+      "id": "WS 2.0 Release_595",
       "name": "onboarding_ws2.0_script_uk.md",
       "display_name": "Onboarding Ws2.0 Script Uk",
       "path": "WS 2.0 Release/video/onboarding_ws2.0_script_uk.md",
@@ -20655,7 +20472,7 @@
       "driveUrl": "https://drive.google.com/file/d/1bH1Jq0FiF0wS7XZ3FNx2DXTrwCDTSMv9/view"
     },
     {
-      "id": "WS 2.0 Release_605",
+      "id": "WS 2.0 Release_596",
       "name": "onboarding_ws2.0_script_en.md",
       "display_name": "Onboarding Ws2.0 Script",
       "path": "WS 2.0 Release/video/onboarding_ws2.0_script_en.md",
@@ -20677,7 +20494,7 @@
       "driveUrl": "https://drive.google.com/file/d/11dWveYYgBqUvcKn_eOWr3wEzq6nIItQH/view"
     },
     {
-      "id": "WS 2.0 Release_606",
+      "id": "WS 2.0 Release_597",
       "name": "onboarding_checklist_ws2.0_script_uk.md",
       "display_name": "Onboarding Checklist Ws2.0 Script Uk",
       "path": "WS 2.0 Release/video/onboarding_checklist_ws2.0_script_uk.md",
@@ -20700,7 +20517,7 @@
       "driveUrl": "https://drive.google.com/file/d/1tZ2cfxjDRb0rGf0vLnhQSqJui0gb8i0N/view"
     },
     {
-      "id": "WS 2.0 Release_607",
+      "id": "WS 2.0 Release_598",
       "name": "onboarding_ws2.0_script_uk.docx",
       "display_name": "Onboarding Ws2.0 Script Uk.docx",
       "path": "WS 2.0 Release/video/onboarding_ws2.0_script_uk.docx",
@@ -20723,7 +20540,7 @@
       "driveUrl": "https://drive.google.com/file/d/1NGuVnnVBWr1XZFcXv5wJP1Cl2rGaV8WT/view"
     },
     {
-      "id": "WS 2.0 Release_608",
+      "id": "WS 2.0 Release_599",
       "name": "onboarding_ws2.0_script_en.docx",
       "display_name": "Onboarding Ws2.0 Script.docx",
       "path": "WS 2.0 Release/video/onboarding_ws2.0_script_en.docx",
@@ -35722,18 +35539,17 @@
       }
     },
     "WS 2.0 Release": {
-      "total_files": 121,
-      "total_folders": 25,
-      "filled_folders": 14,
-      "empty_folders_count": 8,
-      "fill_rate": 56.0,
+      "total_files": 112,
+      "total_folders": 21,
+      "filled_folders": 13,
+      "empty_folders_count": 6,
+      "fill_rate": 61.9,
       "by_section": {
         "Other files": 7,
         "video": 5,
         "articles": 15,
         "smm": 16,
         "pr&media": 6,
-        "landigns": 9,
         "landings": 17,
         "product hunt kit": 10,
         "ads": 36
@@ -35745,9 +35561,7 @@
         "cases",
         "ads/video ads",
         "landings/business types",
-        "landings/competitors",
-        "landigns/business",
-        "landigns/competitors"
+        "landings/competitors"
       ],
       "recent_changes": [
         {
@@ -35924,7 +35738,7 @@
       "folder_tree": {
         "name": "WS 2.0 Release",
         "path": ".",
-        "file_count": 121,
+        "file_count": 112,
         "children": [
           {
             "name": "ads",
@@ -36223,85 +36037,6 @@
             "children": [],
             "files": [],
             "is_empty": true
-          },
-          {
-            "name": "landigns",
-            "path": "landigns",
-            "file_count": 9,
-            "children": [
-              {
-                "name": "business",
-                "path": "landigns/business",
-                "file_count": 0,
-                "children": [],
-                "files": [],
-                "is_empty": true
-              },
-              {
-                "name": "competitors",
-                "path": "landigns/competitors",
-                "file_count": 0,
-                "children": [],
-                "files": [],
-                "is_empty": true
-              },
-              {
-                "name": "features",
-                "path": "landigns/features",
-                "file_count": 9,
-                "children": [],
-                "files": [
-                  {
-                    "name": "time-tracking.txt",
-                    "size": 43292,
-                    "modified": "2026-01-21T18:44:51.532000"
-                  },
-                  {
-                    "name": "dashboard.txt",
-                    "size": 45753,
-                    "modified": "2026-01-21T18:52:38.843000"
-                  },
-                  {
-                    "name": "kanban.txt",
-                    "size": 43747,
-                    "modified": "2026-01-21T18:37:28.767000"
-                  },
-                  {
-                    "name": "reports.txt",
-                    "size": 45010,
-                    "modified": "2026-01-21T18:55:39.218000"
-                  },
-                  {
-                    "name": "projects-tasks.txt",
-                    "size": 44609,
-                    "modified": "2026-01-21T18:52:26.084000"
-                  },
-                  {
-                    "name": "messenger-chats.txt",
-                    "size": 42672,
-                    "modified": "2026-01-21T18:30:14.756000"
-                  },
-                  {
-                    "name": "PLAN.md",
-                    "size": 5330,
-                    "modified": "2026-01-21T19:21:39.989000"
-                  },
-                  {
-                    "name": "calendar.txt",
-                    "size": 50275,
-                    "modified": "2026-01-21T19:09:58.797000"
-                  },
-                  {
-                    "name": "gantt.txt",
-                    "size": 44228,
-                    "modified": "2026-01-21T18:39:59.786000"
-                  }
-                ],
-                "is_empty": false
-              }
-            ],
-            "files": [],
-            "is_empty": false
           },
           {
             "name": "landings",
