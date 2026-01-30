@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "last_update": "2026-01-30T16:36:43.550078",
+    "last_update": "2026-01-30T17:31:41.340150",
     "total_files": 559,
-    "total_folders": 1500,
-    "filled_folders": 168,
-    "empty_folders": 1332,
+    "total_folders": 1503,
+    "filled_folders": 169,
+    "empty_folders": 1334,
     "fill_rate": 11.2,
     "target_files": "Fill all folders",
     "coverage_percent": 11.2,
@@ -41,9 +41,9 @@
     "Published": 331
   },
   "growth_trend": {
-    "last_week": 33,
-    "last_month": 60,
-    "weekly_avg": 14.0
+    "last_week": 36,
+    "last_month": 63,
+    "weekly_avg": 14.7
   },
   "gaps": [
     {
@@ -745,6 +745,66 @@
       "current_count": 0,
       "ideal_count": 3,
       "message": "Software: Videos gap (0/3)"
+    },
+    {
+      "path": "WS 2.0 Release/video",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "video",
+      "severity": "medium",
+      "priority_score": 70,
+      "current_count": 3,
+      "required_count": 9,
+      "missing_count": 6,
+      "message": "video: 3/9"
+    },
+    {
+      "path": "WS 2.0 Release/smm",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "smm",
+      "severity": "medium",
+      "priority_score": 70,
+      "current_count": 16,
+      "required_count": 20,
+      "missing_count": 4,
+      "message": "smm: 16/20"
+    },
+    {
+      "path": "WS 2.0 Release/webinars",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "webinars",
+      "severity": "high",
+      "priority_score": 85,
+      "current_count": 0,
+      "required_count": 5,
+      "missing_count": 5,
+      "message": "webinars: 0/5"
+    },
+    {
+      "path": "WS 2.0 Release/influencer",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "influencer",
+      "severity": "high",
+      "priority_score": 85,
+      "current_count": 0,
+      "required_count": 10,
+      "missing_count": 10,
+      "message": "influencer: 0/10"
+    },
+    {
+      "path": "WS 2.0 Release/cases",
+      "type": "ws2_content_gap",
+      "stage": "WS 2.0 Release",
+      "section": "cases",
+      "severity": "high",
+      "priority_score": 85,
+      "current_count": 0,
+      "required_count": 3,
+      "missing_count": 3,
+      "message": "cases: 0/3"
     }
   ],
   "search_index": [
@@ -752,16 +812,16 @@
       "id": "WS 2.0 Release_1",
       "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
       "display_name": "Порівняльна Таблиця Ws 1.0 Vs Ws 2.0   Групування За Блоками",
-      "path": "WS 2.0 Release/Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+      "path": "WS 2.0 Release/other files/Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/other files/Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
       "stage": "WS 2.0 Release",
-      "section": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+      "section": "other files",
       "feature": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
       "content_type": "Other",
       "language": "Unknown",
       "status": "Idea/Brief",
       "size": 13431,
-      "modified": "2025-10-30T19:55:08",
+      "modified": "2026-01-30T17:29:09.131813",
       "keywords": [
         "порівняльна",
         "таблиця",
@@ -770,49 +830,47 @@
         "групування",
         "блоками"
       ],
-      "snippet": "🎨 Інтерфейс та навігація,,",
-      "driveUrl": "https://drive.google.com/file/d/16-sy-FEQeT6Yhc9z1WYIJ-FVJheultjF/view"
+      "snippet": "🎨 Інтерфейс та навігація,,"
     },
     {
       "id": "WS 2.0 Release_2",
-      "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
-      "display_name": "Порівняльна Таблиця Ws 1.0 Vs Ws 2.0   Для Презентації (Основне)",
-      "path": "WS 2.0 Release/Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+      "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+      "display_name": "Порівняльна Таблиця Ws 1.0 Vs Ws 2.0   Для Презентації (Основне)",
+      "path": "WS 2.0 Release/other files/Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/other files/Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
       "stage": "WS 2.0 Release",
-      "section": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
-      "feature": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+      "section": "other files",
+      "feature": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
       "content_type": "Other",
       "language": "Unknown",
       "status": "Idea/Brief",
       "size": 1887,
-      "modified": "2025-10-30T19:55:22",
+      "modified": "2026-01-30T17:29:09.131942",
       "keywords": [
         "порівняльна",
         "таблиця",
         "1.0",
         "2.0",
         "для",
-        "презентації",
+        "презентації",
         "(основне)"
       ],
-      "snippet": ",Worksection 1.0,Worksection 2.0",
-      "driveUrl": "https://drive.google.com/file/d/1FueZ6A6D3Ju4I2cmek8AQ-TVsyVeaQQC/view"
+      "snippet": ",Worksection 1.0,Worksection 2.0"
     },
     {
       "id": "WS 2.0 Release_3",
       "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
       "display_name": "Порівняльна Таблиця Ws 1.0 Vs Ws 2.0   Оновлення У Worksection 2.0",
-      "path": "WS 2.0 Release/Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
-      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+      "path": "WS 2.0 Release/other files/Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+      "full_path": "/Users/marakinpoetry/Documents/CONTENT TREE/Content/WS 2.0 Release/other files/Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
       "stage": "WS 2.0 Release",
-      "section": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+      "section": "other files",
       "feature": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
       "content_type": "Other",
       "language": "Unknown",
       "status": "Idea/Brief",
       "size": 6000,
-      "modified": "2025-10-30T19:55:48",
+      "modified": "2026-01-30T17:29:09.132095",
       "keywords": [
         "порівняльна",
         "таблиця",
@@ -822,8 +880,7 @@
         "worksection",
         "2.0"
       ],
-      "snippet": "Функція,Оновлення у Worksection 2.0",
-      "driveUrl": "https://drive.google.com/file/d/1yZ23ayVjnpxnF5HIZ6MO9VEGcn8ex8g4/view"
+      "snippet": "Функція,Оновлення у Worksection 2.0"
     },
     {
       "id": "WS 2.0 Release_4",
@@ -30029,14 +30086,12 @@
     },
     "WS 2.0 Release": {
       "total_files": 72,
-      "total_folders": 21,
-      "filled_folders": 12,
-      "empty_folders_count": 9,
-      "fill_rate": 57.1,
+      "total_folders": 24,
+      "filled_folders": 13,
+      "empty_folders_count": 11,
+      "fill_rate": 54.2,
       "by_section": {
-        "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv": 1,
-        "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv": 1,
-        "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv": 1,
+        "other files": 3,
         "video": 5,
         "product hunt kit": 10,
         "landings": 17,
@@ -30049,40 +30104,42 @@
         "pains",
         "ads/static ads",
         "ads/video ads",
+        "influencer",
         "landings/business types",
         "landings/competitors",
+        "webinars",
         "cases"
       ],
       "recent_changes": [
         {
-          "path": "WS 2.0 Release/smm/Серія сторіс — Щось нове наближається… 👀 (1).md",
-          "name": "Серія сторіс — Щось нове наближається… 👀 (1).md",
-          "section": "smm",
-          "content_type": "SMM",
+          "path": "WS 2.0 Release/other files/Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+          "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+          "section": "other files",
+          "content_type": "Other",
           "language": "Unknown",
           "status": "Idea/Brief",
-          "modified": "2026-01-28T13:29:48",
-          "size": 8527
+          "modified": "2026-01-30T17:29:09.132095",
+          "size": 6000
         },
         {
-          "path": "WS 2.0 Release/smm/Пост — Як Worksection 2.0 допомагає креативним агенціям.md",
-          "name": "Пост — Як Worksection 2.0 допомагає креативним агенціям.md",
-          "section": "smm",
-          "content_type": "SMM",
+          "path": "WS 2.0 Release/other files/Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+          "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+          "section": "other files",
+          "content_type": "Other",
           "language": "Unknown",
           "status": "Idea/Brief",
-          "modified": "2026-01-28T13:29:41",
-          "size": 10511
+          "modified": "2026-01-30T17:29:09.131942",
+          "size": 1887
         },
         {
-          "path": "WS 2.0 Release/smm/Пост — Швидкий старт у Worksection 2.0.md",
-          "name": "Пост — Швидкий старт у Worksection 2.0.md",
-          "section": "smm",
-          "content_type": "SMM",
+          "path": "WS 2.0 Release/other files/Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+          "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+          "section": "other files",
+          "content_type": "Other",
           "language": "Unknown",
           "status": "Idea/Brief",
-          "modified": "2026-01-28T13:29:33",
-          "size": 7436
+          "modified": "2026-01-30T17:29:09.131813",
+          "size": 13431
         }
       ],
       "folder_tree": {
@@ -30208,6 +30265,14 @@
             "is_empty": true
           },
           {
+            "name": "influencer",
+            "path": "influencer",
+            "file_count": 0,
+            "children": [],
+            "files": [],
+            "is_empty": true
+          },
+          {
             "name": "landings",
             "path": "landings",
             "file_count": 17,
@@ -30324,6 +30389,30 @@
               }
             ],
             "files": [],
+            "is_empty": false
+          },
+          {
+            "name": "other files",
+            "path": "other files",
+            "file_count": 3,
+            "children": [],
+            "files": [
+              {
+                "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
+                "size": 13431,
+                "modified": "2026-01-30T17:29:09.131813"
+              },
+              {
+                "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
+                "size": 1887,
+                "modified": "2026-01-30T17:29:09.131942"
+              },
+              {
+                "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
+                "size": 6000,
+                "modified": "2026-01-30T17:29:09.132095"
+              }
+            ],
             "is_empty": false
           },
           {
@@ -30617,72 +30706,69 @@
               }
             ],
             "is_empty": false
-          }
-        ],
-        "files": [
-          {
-            "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv",
-            "size": 13431,
-            "modified": "2025-10-30T19:55:08"
           },
           {
-            "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv",
-            "size": 1887,
-            "modified": "2025-10-30T19:55:22"
-          },
-          {
-            "name": "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv",
-            "size": 6000,
-            "modified": "2025-10-30T19:55:48"
+            "name": "webinars",
+            "path": "webinars",
+            "file_count": 0,
+            "children": [],
+            "files": [],
+            "is_empty": true
           }
         ],
+        "files": [],
         "is_empty": false
       },
       "section_progress": {
-        "Порівняльна таблиця WS 1.0 vs WS 2.0 - Групування за блоками.csv": {
-          "current": 1,
-          "required": 10,
-          "fill_rate": 10.0
-        },
-        "Порівняльна таблиця WS 1.0 vs WS 2.0 - Для презентації (основне).csv": {
-          "current": 1,
-          "required": 10,
-          "fill_rate": 10.0
-        },
-        "Порівняльна таблиця WS 1.0 vs WS 2.0 - Оновлення у Worksection 2.0.csv": {
-          "current": 1,
-          "required": 10,
-          "fill_rate": 10.0
-        },
-        "video": {
-          "current": 5,
-          "required": 10,
-          "fill_rate": 50.0
-        },
-        "product hunt kit": {
-          "current": 10,
-          "required": 10,
+        "articles": {
+          "current": 15,
+          "required": 6,
           "fill_rate": 100
         },
         "landings": {
-          "current": 17,
-          "required": 17,
-          "fill_rate": 100
-        },
-        "articles": {
-          "current": 15,
-          "required": 15,
-          "fill_rate": 100
-        },
-        "smm": {
-          "current": 16,
-          "required": 16,
+          "current": 9,
+          "required": 5,
           "fill_rate": 100
         },
         "pr&media": {
           "current": 6,
+          "required": 5,
+          "fill_rate": 100
+        },
+        "video": {
+          "current": 3,
+          "required": 9,
+          "fill_rate": 33.3
+        },
+        "smm": {
+          "current": 16,
+          "required": 20,
+          "fill_rate": 80.0
+        },
+        "product hunt kit": {
+          "current": 10,
+          "required": 7,
+          "fill_rate": 100
+        },
+        "webinars": {
+          "current": 0,
+          "required": 5,
+          "fill_rate": 0.0
+        },
+        "influencer": {
+          "current": 0,
           "required": 10,
-          "fill_rate": 60.0
+          "fill_rate": 0.0
+        },
+        "cases": {
+          "current": 0,
+          "required": 3,
+          "fill_rate": 0.0
+        },
+        "other files": {
+          "current": 13,
+          "required": 0,
+          "fill_rate": 100
         }
       }
     }

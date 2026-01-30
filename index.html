@@ -331,7 +331,7 @@
                     <div class="h-64">
                         <canvas id="statusChart"></canvas>
                     </div>
-                    <div class="grid grid-cols-2 gap-3 mt-6" id="statusLegend">
+                    <div class="space-y-3 mt-6" id="statusLegend">
                         <!-- Will be populated by JavaScript -->
                     </div>
                 </div>
@@ -699,7 +699,7 @@
         // Load dashboard data
         async function loadData() {
             try {
-                const response = await fetch('data.json');
+                const response = await fetch('data.json?t=' + Date.now());
                 if (!response.ok) {
                     throw new Error('data.json not found. Please run: python update_dashboard.py');
                 }
@@ -731,17 +731,21 @@
 
             // Card 1: Total files with WS 1.0 / WS 2.0 breakdown
             document.getElementById('totalContent').textContent = meta.total_files;
-            document.getElementById('ws10Count').textContent = meta.published_count || 0;
-            document.getElementById('ws20Count').textContent = meta.not_published_count || 0;
+            const ws10Total = (data.by_stage['WS 1.0/Pre-Registration'] || 0)
+                            + (data.by_stage['WS 1.0/Trial'] || 0)
+                            + (data.by_stage['WS 1.0/Success_Client'] || 0);
+            const ws20Total = data.by_stage['WS 2.0 Release'] || 0;
+            document.getElementById('ws10Count').textContent = ws10Total;
+            document.getElementById('ws20Count').textContent = ws20Total;
 
             // Card 2: Published (WS 1.0)
             const published = meta.published_count || 0;
             document.getElementById('publishedContent').textContent = published;
             document.getElementById('weekGrowth').textContent = data.growth_trend.last_week;
 
-            // Card 3: Not Published (WS 2.0 Release)
-            const notPublished = meta.not_published_count || 0;
-            document.getElementById('notPublishedContent').textContent = notPublished;
+            // Card 3: WS 2.0 Release content
+            const ws2Files = data.by_stage['WS 2.0 Release'] || 0;
+            document.getElementById('notPublishedContent').textContent = ws2Files;
 
             // Card 4: Growth
             document.getElementById('monthGrowth').textContent = data.growth_trend.last_month;
@@ -1038,10 +1042,12 @@
         // Update gaps tables - split by WS 1.0 and WS 2.0
         function updateGapsTable(data) {
             const allGaps = data.gaps || [];
+            console.log('Total gaps:', allGaps.length);
 
             // Split gaps by WS version
             const ws10Gaps = allGaps.filter(g => g.stage && g.stage.startsWith('WS 1.0'));
             const ws20Gaps = allGaps.filter(g => g.stage && g.stage.startsWith('WS 2.0'));
+            console.log('WS 1.0 gaps:', ws10Gaps.length, 'WS 2.0 gaps:', ws20Gaps.length);
 
             // Update counts
             document.getElementById('ws10GapsCount').textContent = ws10Gaps.length;
@@ -1069,7 +1075,7 @@
                 const color = severityColors[gap.severity] || 'gray';
                 const priorityScore = gap.priority_score || 0;
                 const currentCount = gap.current_count || 0;
-                const idealCount = gap.ideal_count || 3;
+                const idealCount = gap.ideal_count || gap.required_count || 3;
 
                 // Get section name (last part of path)
                 const pathParts = (gap.path || '').split('/');
@@ -1265,9 +1271,8 @@
                         const dateStr = date.toLocaleDateString('uk-UA', { day: 'numeric', month: 'short' });
 
                         // Get driveUrl from search index if available
-                        const folderPath = currentFolderData.path === '.' ? stage : `${stage}/${currentFolderData.path}`;
                         const searchFile = (dashboardData.search_index || []).find(
-                            f => f.name === file.name && f.path.startsWith(folderPath)
+                            f => f.name === file.name && f.path.includes(currentFolderData.path)
                         );
                         const driveUrl = searchFile?.driveUrl || '';
 
@@ -1834,11 +1839,9 @@
 
         function showFilePreviewFromTree(fileData) {
             // Try to find file in search index for full metadata
-            // Tree path is like "Content/WS 1.0/..." but search_index path is "WS 1.0/..."
-            const treePath = fileData.full_path.replace(/^Content\//, '');
             const fileInIndex = searchIndex.find(f =>
-                f.path === treePath ||
-                (f.name === fileData.name && treePath.includes(f.path.split('/').slice(0, -1).join('/')))
+                f.full_path === fileData.full_path ||
+                f.name === fileData.name
             );
 
             if (fileInIndex) {
