@@ -1,0 +1,60 @@
+name: Sync Dashboard
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Content/**'
+      - 'Dashboard/index.html'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-api-python-client google-auth pyyaml
+
+      - name: Create credentials file
+        run: echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
+
+      - name: Sync from Google Drive
+        run: python sync_gdrive.py
+
+      - name: Generate dashboard data
+        run: |
+          python scripts/db/init_db.py --force
+          python scripts/db/sync.py
+          python scripts/db/export.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add Content/ Dashboard/data.json
+          git diff --staged --quiet || git commit -m "Auto-sync: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: Dashboard
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

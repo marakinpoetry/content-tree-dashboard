@@ -1,0 +1,151 @@
+Hub Generation Log
+============================================================
+Date: 2026-01-08 12:57:08
+Total content files scanned: 567
+Tagged content files: 488
+
+Hubs Generated:
+------------------------------------------------------------
+
+Competitor: 13 hubs
+  - trello_hub.md (11 items)
+  - telegram_hub.md (8 items)
+  - asana_hub.md (5 items)
+  - notion_hub.md (5 items)
+  - bitrix24_hub.md (4 items)
+  - clickup_hub.md (4 items)
+  - basecamp_hub.md (3 items)
+  - jira_hub.md (3 items)
+  - monday_hub.md (3 items)
+  - ads_hub.md (3 items)
+  - landings_hub.md (1 items)
+  - articles_hub.md (1 items)
+  - videos_hub.md (1 items)
+
+Business Type: 13 hubs
+  - agencies_hub.md (70 items)
+  - construction_hub.md (17 items)
+  - software_hub.md (16 items)
+  - government_hub.md (12 items)
+  - retail_hub.md (9 items)
+  - other_hub.md (9 items)
+  - media_hub.md (6 items)
+  - manufacturing_hub.md (4 items)
+  - education_hub.md (3 items)
+  - startups_hub.md (3 items)
+  - legal_hub.md (1 items)
+  - finance_hub.md (1 items)
+  - non_profits_hub.md (1 items)
+
+Features: 13 hubs
+  - projects_hub.md (45 items)
+  - gantt_chart_hub.md (18 items)
+  - kanban_hub.md (15 items)
+  - time_tracking_hub.md (14 items)
+  - integrations_hub.md (12 items)
+  - brand_ads_hub.md (8 items)
+  - automation_hub.md (4 items)
+  - migration_hub.md (4 items)
+  - reports_hub.md (3 items)
+  - permissions_hub.md (1 items)
+  - tasks_hub.md (1 items)
+  - comments_hub.md (1 items)
+  - mobile_app_hub.md (1 items)
+
+Topic: 19 hubs
+  - strategy_strategic_planning_hub.md (43 items)
+  - methodologies_agile_hub.md (35 items)
+  - skills_management_skills_hub.md (16 items)
+  - frameworks_okr_kpi_hub.md (11 items)
+  - frameworks_smart_goals_hub.md (6 items)
+  - skills_organizational_structure_hub.md (3 items)
+  - skills_remote_hybrid_work_hub.md (3 items)
+  - strategy_decision_making_hub.md (2 items)
+  - frameworks_raid_hub.md (2 items)
+  - frameworks_raci_hub.md (2 items)
+  - methodologies_top_project_management_methods_in_software_development_waterfall_agile_scrum_kanban_enmd_hub.md (1 items)
+  - methodologies_ultimate_guide_to_project_charter_definitions_creation_and_examples_enmd_hub.md (1 items)
+  - methodologies_from_chaos_to_project_management_the_essential_guide_enmd_hub.md (1 items)
+  - strategy_стратегія_проти_тактики_у_чому_різниця_ukmd_hub.md (1 items)
+  - strategy_goal_setting_hub.md (1 items)
+  - frameworks_eisenhower_matrix_hub.md (1 items)
+  - methodologies_kanban_method_hub.md (1 items)
+  - methodologies_lean_hub.md (1 items)
+  - customer_success_hub.md (1 items)
+
+Pain: 2 hubs
+  - task_chaos_hub.md (5 items)
+  - no_transparency_hub.md (1 items)
+
+Total Hubs: 60
+
+Files Created:
+------------------------------------------------------------
+- Content/Hubs/INDEX.md
+- Content/Hubs/README.md
+- Content/Hubs/generation_log.txt
+- Content/Hubs/competitors/landings_hub.md
+- Content/Hubs/competitors/articles_hub.md
+- Content/Hubs/competitors/videos_hub.md
+- Content/Hubs/competitors/asana_hub.md
+- Content/Hubs/competitors/bitrix24_hub.md
+- Content/Hubs/competitors/trello_hub.md
+- Content/Hubs/competitors/telegram_hub.md
+- Content/Hubs/competitors/basecamp_hub.md
+- Content/Hubs/competitors/jira_hub.md
+- Content/Hubs/competitors/notion_hub.md
+- Content/Hubs/competitors/clickup_hub.md
+- Content/Hubs/competitors/monday_hub.md
+- Content/Hubs/competitors/ads_hub.md
+- Content/Hubs/business_types/media_hub.md
+- Content/Hubs/business_types/agencies_hub.md
+- Content/Hubs/business_types/legal_hub.md
+- Content/Hubs/business_types/finance_hub.md
+- Content/Hubs/business_types/non_profits_hub.md
+- Content/Hubs/business_types/construction_hub.md
+- Content/Hubs/business_types/manufacturing_hub.md
+- Content/Hubs/business_types/software_hub.md
+- Content/Hubs/business_types/retail_hub.md
+- Content/Hubs/business_types/other_hub.md
+- Content/Hubs/business_types/education_hub.md
+- Content/Hubs/business_types/government_hub.md
+- Content/Hubs/business_types/startups_hub.md
+- Content/Hubs/features/integrations_hub.md
+- Content/Hubs/features/kanban_hub.md
+- Content/Hubs/features/automation_hub.md
+- Content/Hubs/features/reports_hub.md
+- Content/Hubs/features/migration_hub.md
+- Content/Hubs/features/brand_ads_hub.md
+- Content/Hubs/features/permissions_hub.md
+- Content/Hubs/features/projects_hub.md
+- Content/Hubs/features/time_tracking_hub.md
+- Content/Hubs/features/gantt_chart_hub.md
+- Content/Hubs/features/tasks_hub.md
+- Content/Hubs/features/comments_hub.md
+- Content/Hubs/features/mobile_app_hub.md
+- Content/Hubs/topics/methodologies_top_project_management_methods_in_software_development_waterfall_agile_scrum_kanban_enmd_hub.md
+- Content/Hubs/topics/methodologies_ultimate_guide_to_project_charter_definitions_creation_and_examples_enmd_hub.md
+- Content/Hubs/topics/methodologies_from_chaos_to_project_management_the_essential_guide_enmd_hub.md
+- Content/Hubs/topics/strategy_стратегія_проти_тактики_у_чому_різниця_ukmd_hub.md
+- Content/Hubs/topics/strategy_decision_making_hub.md
+- Content/Hubs/topics/strategy_strategic_planning_hub.md
+- Content/Hubs/topics/strategy_goal_setting_hub.md
+- Content/Hubs/topics/frameworks_raid_hub.md
+- Content/Hubs/topics/frameworks_smart_goals_hub.md
+- Content/Hubs/topics/frameworks_eisenhower_matrix_hub.md
+- Content/Hubs/topics/frameworks_okr_kpi_hub.md
+- Content/Hubs/topics/frameworks_raci_hub.md
+- Content/Hubs/topics/skills_management_skills_hub.md
+- Content/Hubs/topics/skills_organizational_structure_hub.md
+- Content/Hubs/topics/skills_remote_hybrid_work_hub.md
+- Content/Hubs/topics/methodologies_kanban_method_hub.md
+- Content/Hubs/topics/methodologies_agile_hub.md
+- Content/Hubs/topics/methodologies_lean_hub.md
+- Content/Hubs/topics/customer_success_hub.md
+- Content/Hubs/pains/no_transparency_hub.md
+- Content/Hubs/pains/task_chaos_hub.md
+
+Errors: 0
+Warnings: 0
+
+Execution time: 0.40 seconds

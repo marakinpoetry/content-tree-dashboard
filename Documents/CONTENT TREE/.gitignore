@@ -1,0 +1,38 @@
+# Credentials (NEVER commit)
+credentials.json
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Logs
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# SQLite database
+content.db
+*.db-journal
+
+# Large binary files (>50MB)
+*.pdf
+*.pptx
+
+# Temporary files
+*.tmp
+*~
