@@ -760,7 +760,8 @@
                 var statusTag = f.status==='published'?'<span class="tag tag-green">published</span>':'<span class="tag tag-amber">draft</span>';
                 var ctDn = DATA.content_types.find(function(c){return c.name===f.content_type;});
                 var sizeKb = (f.size/1024).toFixed(1);
-                rr.push('<tr><td class="file-name-cell">'+f.name+'</td><td style="color:var(--text-secondary);font-size:0.75rem;">'+(f.category||'-')+'</td><td>'+(f.topic||'-')+'</td><td><span class="tag tag-blue">'+(ctDn?ctDn.display_name:f.content_type)+'</span></td><td><span class="tag tag-gray">'+(f.language?f.language.toUpperCase():'-')+'</span></td><td>'+statusTag+'</td><td style="color:var(--text-muted);">'+sizeKb+' KB</td></tr>');
+                var nameHtml = f.drive_url ? '<a href="'+f.drive_url+'" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">'+f.name+'</a>' : f.name;
+                rr.push('<tr><td class="file-name-cell">'+nameHtml+'</td><td style="color:var(--text-secondary);font-size:0.75rem;">'+(f.category||'-')+'</td><td>'+(f.topic||'-')+'</td><td><span class="tag tag-blue">'+(ctDn?ctDn.display_name:f.content_type)+'</span></td><td><span class="tag tag-gray">'+(f.language?f.language.toUpperCase():'-')+'</span></td><td>'+statusTag+'</td><td style="color:var(--text-muted);">'+sizeKb+' KB</td></tr>');
             });
             tbody.innerHTML = rr.join('');
         }
