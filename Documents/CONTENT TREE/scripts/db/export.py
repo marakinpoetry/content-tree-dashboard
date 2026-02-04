@@ -92,27 +92,28 @@ def export_coverage(conn) -> dict:
 
 def export_gaps(conn) -> list:
     """
-    Find gaps: topic × content_type × language combinations that have 0 files.
+    Find gaps: product × topic × content_type × language combinations that have 0 files.
     Uses priorities table for severity labeling.
+    Products with topic structure: WS 1.0, WS 2.0.
     """
-    # Get all topics, content types, languages
+    products = ["WS 1.0", "WS 2.0"]
     topics = conn.execute("SELECT name, display_name, category FROM topics").fetchall()
     content_types = conn.execute(
         "SELECT name FROM content_types WHERE name NOT IN ('other', 'static_ad', 'video_ad')"
     ).fetchall()
     languages = conn.execute("SELECT code FROM languages WHERE is_primary = 1").fetchall()
 
-    # Get existing combinations
+    # Get existing combinations per product
     existing = set()
     cursor = conn.execute(
-        """SELECT topic, content_type, language
+        """SELECT product, topic, content_type, language
            FROM content_files
            WHERE topic IS NOT NULL AND topic != ''
              AND content_type IS NOT NULL
              AND language IS NOT NULL AND language != ''"""
     )
     for row in cursor:
-        existing.add((row["topic"], row["content_type"], row["language"]))
+        existing.add((row["product"], row["topic"], row["content_type"], row["language"]))
 
     # Load priority rules
     priority_rules = conn.execute(
@@ -120,46 +121,46 @@ def export_gaps(conn) -> list:
     ).fetchall()
 
     gaps = []
-    for topic_row in topics:
-        topic_name = topic_row["name"]
-        topic_display = topic_row["display_name"]
-        topic_category = topic_row["category"]
+    for product in products:
+        for topic_row in topics:
+            topic_name = topic_row["name"]
+            topic_display = topic_row["display_name"]
+            topic_category = topic_row["category"]
 
-        for ct_row in content_types:
-            ct_name = ct_row["name"]
+            for ct_row in content_types:
+                ct_name = ct_row["name"]
 
-            for lang_row in languages:
-                lang_code = lang_row["code"]
+                for lang_row in languages:
+                    lang_code = lang_row["code"]
 
-                if (topic_name, ct_name, lang_code) not in existing:
-                    # Find matching priority rule (most specific first)
-                    priority = 4
-                    priority_label = "Low"
+                    if (product, topic_name, ct_name, lang_code) not in existing:
+                        priority = 4
+                        priority_label = "Low"
 
-                    for rule in priority_rules:
-                        r_stage = rule["stage"]
-                        r_cat = rule["category"]
-                        r_ct = rule["content_type"]
-                        r_lang = rule["language"]
+                        for rule in priority_rules:
+                            r_cat = rule["category"]
+                            r_ct = rule["content_type"]
+                            r_lang = rule["language"]
 
-                        ct_match = r_ct is None or r_ct == ct_name
-                        lang_match = r_lang is None or r_lang == lang_code
-                        cat_match = r_cat is None or r_cat == topic_category
+                            ct_match = r_ct is None or r_ct == ct_name
+                            lang_match = r_lang is None or r_lang == lang_code
+                            cat_match = r_cat is None or r_cat == topic_category
 
-                        if ct_match and lang_match and cat_match:
-                            if rule["priority"] < priority:
-                                priority = rule["priority"]
-                                priority_label = rule["priority_label"]
+                            if ct_match and lang_match and cat_match:
+                                if rule["priority"] < priority:
+                                    priority = rule["priority"]
+                                    priority_label = rule["priority_label"]
 
-                    gaps.append({
-                        "topic": topic_name,
-                        "topic_display": topic_display,
-                        "category": topic_category,
-                        "content_type": ct_name,
-                        "language": lang_code,
-                        "priority": priority,
-                        "priority_label": priority_label,
-                    })
+                        gaps.append({
+                            "product": product,
+                            "topic": topic_name,
+                            "topic_display": topic_display,
+                            "category": topic_category,
+                            "content_type": ct_name,
+                            "language": lang_code,
+                            "priority": priority,
+                            "priority_label": priority_label,
+                        })
 
     # Sort: critical first, then by category/topic
     gaps.sort(key=lambda g: (g["priority"], g["category"], g["topic"]))

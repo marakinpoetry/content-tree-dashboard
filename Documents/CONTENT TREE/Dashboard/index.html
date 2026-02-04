@@ -286,8 +286,14 @@
         </nav>
         <div class="sidebar-footer">
             <div class="sidebar-stat"><span class="sidebar-stat-value" id="sidebarTotal">0</span><span class="sidebar-stat-label">files</span></div>
-            <div class="sidebar-stat-bar"><div class="sidebar-stat-bar-fill" id="sidebarBarFill" style="width:0%"></div></div>
-            <div id="sidebarCoverage" style="font-size:0.65rem;color:var(--text-sidebar);margin-top:4px;">loading...</div>
+            <div style="margin-top:6px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px;"><span style="font-size:0.65rem;color:var(--text-sidebar);">WS 1.0</span><span id="sidebarCov1" style="font-size:0.65rem;color:var(--text-sidebar);">—</span></div>
+                <div class="sidebar-stat-bar"><div class="sidebar-stat-bar-fill" id="sidebarBar1" style="width:0%"></div></div>
+            </div>
+            <div style="margin-top:6px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px;"><span style="font-size:0.65rem;color:var(--text-sidebar);">WS 2.0</span><span id="sidebarCov2" style="font-size:0.65rem;color:var(--text-sidebar);">—</span></div>
+                <div class="sidebar-stat-bar"><div class="sidebar-stat-bar-fill" id="sidebarBar2" style="width:0%"></div></div>
+            </div>
         </div>
     </aside>
     <div class="main">
@@ -331,11 +337,15 @@
         document.getElementById('navFilesBadge').textContent = DATA.total_files;
         document.getElementById('navGapsBadge').textContent = DATA.gaps.length;
         var primaryLangs = DATA.languages.filter(function(l){return l.is_primary;}).length;
-        var totalSlots = DATA.topics.length * MATRIX_TYPES.length * primaryLangs;
-        var filled = totalSlots - DATA.gaps.length;
-        var coveragePct = totalSlots > 0 ? ((filled / totalSlots) * 100).toFixed(1) : 0;
-        document.getElementById('sidebarBarFill').style.width = coveragePct + '%';
-        document.getElementById('sidebarCoverage').textContent = coveragePct + '% coverage (' + filled + ' / ' + totalSlots + ')';
+        var gapTypes = ['article','landing','video','smm'];
+        var totalSlots = DATA.topics.length * gapTypes.length * primaryLangs;
+        ['WS 1.0','WS 2.0'].forEach(function(prod,i){
+            var pGaps = DATA.gaps.filter(function(g){return g.product===prod;}).length;
+            var pFilled = totalSlots - pGaps;
+            var pPct = totalSlots > 0 ? ((pFilled / totalSlots) * 100).toFixed(1) : 0;
+            document.getElementById('sidebarBar'+(i+1)).style.width = pPct + '%';
+            document.getElementById('sidebarCov'+(i+1)).textContent = pPct + '% (' + pFilled + '/' + totalSlots + ')';
+        });
         renderOverviewMetrics('all');
         renderOverviewContent('all');
         initMatrixFilters();
