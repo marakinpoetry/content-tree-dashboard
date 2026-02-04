@@ -198,8 +198,8 @@
         .files-table tr:hover td { background: rgba(255,107,53,0.02); }
         .files-table tr:last-child td { border-bottom: none; }
         .file-name-cell { font-weight: 500; color: var(--text-primary); }
-        .file-name-cell a { color: var(--accent) !important; text-decoration: none; cursor: pointer; }
-        .file-name-cell a:hover { text-decoration: underline; }
+        .drive-link { color: inherit !important; text-decoration: none; cursor: pointer; }
+        .drive-link:hover { text-decoration: underline; }
         .tag { display: inline-block; padding: 1px 8px; border-radius: var(--r-sm); font-size: 0.68rem; font-weight: 500; }
         .tag-blue { background: rgba(59,130,246,0.1); color: var(--blue); }
         .tag-green { background: rgba(16,185,129,0.1); color: var(--green); }
@@ -468,9 +468,14 @@
         var actH = recent.map(function(f){
             var dc = f.status === 'published' ? '#10B981' : '#F59E0B';
             var pp = f.path.split('/').slice(0,-1).join(' / ');
-            return '<div class="activity-item"><div class="activity-dot" style="background:'+dc+';"></div><div><div class="activity-name">'+f.name+'</div><div class="activity-path">'+pp+'</div><div class="activity-time">'+timeAgo(new Date(f.modified))+' | '+f.status+'</div></div></div>';
+            return '<div class="activity-item"><div class="activity-dot" style="background:'+dc+';"></div><div><div class="activity-name">'+driveLink(f)+'</div><div class="activity-path">'+pp+'</div><div class="activity-time">'+timeAgo(new Date(f.modified))+' | '+f.status+'</div></div></div>';
         }).join('');
         return '<div class="section-grid"><div class="card"><div class="card-title">Languages</div>'+(langH||'<div style="color:var(--text-muted);">No data</div>')+'</div><div class="card"><div class="card-title">Recent activity</div>'+(actH||'<div style="color:var(--text-muted);">No files</div>')+'</div></div>';
+    }
+
+    function driveLink(f) {
+        if (f.drive_url && f.drive_url !== 'null') return '<a class="drive-link" href="'+f.drive_url+'" target="_blank" rel="noopener">'+f.name+'</a>';
+        return f.name;
     }
 
     function timeAgo(d) {
@@ -518,7 +523,7 @@
                     var cn = {name:cat, file_count:cf.length, children:[]};
                     DATA.topics.filter(function(t){return t.category===cat;}).forEach(function(topic){
                         var tf = cf.filter(function(f){return f.topic===topic.name;});
-                        cn.children.push({name:topic.display_name, file_count:tf.length, children: tf.slice(0,4).map(function(f){return {name:f.name,file_count:0,is_file:true};})});
+                        cn.children.push({name:topic.display_name, file_count:tf.length, children: tf.slice(0,4).map(function(f){return {name:f.name,file_count:0,is_file:true,drive_url:f.drive_url};})});
                     });
                     sn.children.push(cn);
                 });
@@ -532,7 +537,7 @@
             files.forEach(function(f){ if(!byCt[f.content_type]) byCt[f.content_type]=[]; byCt[f.content_type].push(f); });
             Object.keys(byCt).forEach(function(ct){
                 var dn = DATA.content_types.find(function(c){return c.name===ct;});
-                root.children.push({name:dn?dn.display_name:ct, file_count:byCt[ct].length, children: byCt[ct].slice(0,4).map(function(f){return {name:f.name,file_count:0,is_file:true};})});
+                root.children.push({name:dn?dn.display_name:ct, file_count:byCt[ct].length, children: byCt[ct].slice(0,4).map(function(f){return {name:f.name,file_count:0,is_file:true,drive_url:f.drive_url};})});
             });
             return root;
         }
@@ -571,7 +576,7 @@
         var nodes=treeRoot.descendants(), links=treeRoot.links();
         nodes.forEach(function(d){d.y=d.depth*300;});
         var node=treeSvgG.selectAll('g.node').data(nodes,function(d){return d.id;});
-        var ne=node.enter().append('g').attr('class','node').attr('transform',function(d){return 'translate('+(source.y0||0)+','+(source.x0||0)+')';}).style('cursor',function(d){return(d.children||d._children)?'pointer':'default';}).on('click',function(ev,d){if(d.children||d._children){if(d.children){d._children=d.children;d.children=null;}else{d.children=d._children;d._children=null;} updateTree(d);}});
+        var ne=node.enter().append('g').attr('class','node').attr('transform',function(d){return 'translate('+(source.y0||0)+','+(source.x0||0)+')';}).style('cursor',function(d){return(d.children||d._children||d.data.drive_url)?'pointer':'default';}).on('click',function(ev,d){if(d.data.is_file&&d.data.drive_url&&d.data.drive_url!=='null'){window.open(d.data.drive_url,'_blank');return;}if(d.children||d._children){if(d.children){d._children=d.children;d.children=null;}else{d.children=d._children;d._children=null;} updateTree(d);}});
         ne.append('rect').attr('width',function(d){return d.data.is_file?200:240;}).attr('height',function(d){return d.data.is_file?32:52;}).attr('x',function(d){return d.data.is_file?-100:-120;}).attr('y',function(d){return d.data.is_file?-16:-26;}).attr('rx',function(d){return d.data.is_file?6:8;}).attr('fill',function(d){return d.data.is_file?'#13151C':'#1A1D27';}).attr('stroke',function(d){return getNodeColor(d);}).attr('stroke-width',function(d){return d.data.is_file?1:2;});
         ne.append('text').attr('dy',function(d){return d.data.is_file?4:-4;}).attr('text-anchor','middle').style('font-size',function(d){return d.data.is_file?'10px':'12px';}).style('font-weight',function(d){return d.data.is_file?'400':'600';}).style('fill',function(d){return d.data.is_file?'#9CA3AF':'#E5E7EB';}).style('font-family',function(d){return d.data.is_file?"'JetBrains Mono',monospace":"'DM Sans',sans-serif";}).text(function(d){return truncText(d.data.name,d.data.is_file?30:28);});
         ne.append('text').attr('dy',14).attr('text-anchor','middle').style('font-size','10px').style('fill','#8B8FA3').text(function(d){return d.data.is_file?'':d.data.file_count+' files';});
@@ -762,8 +767,7 @@
                 var statusTag = f.status==='published'?'<span class="tag tag-green">published</span>':'<span class="tag tag-amber">draft</span>';
                 var ctDn = DATA.content_types.find(function(c){return c.name===f.content_type;});
                 var sizeKb = (f.size/1024).toFixed(1);
-                var nameHtml = (f.drive_url && f.drive_url!=='null') ? '<a href="'+f.drive_url+'" target="_blank" rel="noopener">'+f.name+'</a>' : f.name;
-                rr.push('<tr><td class="file-name-cell">'+nameHtml+'</td><td style="color:var(--text-secondary);font-size:0.75rem;">'+(f.category||'-')+'</td><td>'+(f.topic||'-')+'</td><td><span class="tag tag-blue">'+(ctDn?ctDn.display_name:f.content_type)+'</span></td><td><span class="tag tag-gray">'+(f.language?f.language.toUpperCase():'-')+'</span></td><td>'+statusTag+'</td><td style="color:var(--text-muted);">'+sizeKb+' KB</td></tr>');
+                rr.push('<tr><td class="file-name-cell">'+driveLink(f)+'</td><td style="color:var(--text-secondary);font-size:0.75rem;">'+(f.category||'-')+'</td><td>'+(f.topic||'-')+'</td><td><span class="tag tag-blue">'+(ctDn?ctDn.display_name:f.content_type)+'</span></td><td><span class="tag tag-gray">'+(f.language?f.language.toUpperCase():'-')+'</span></td><td>'+statusTag+'</td><td style="color:var(--text-muted);">'+sizeKb+' KB</td></tr>');
             });
             tbody.innerHTML = rr.join('');
         }
@@ -922,7 +926,7 @@
             currentFolder.files.sort(function(a,b){return new Date(b.modified)-new Date(a.modified);}).forEach(function(f){
                 var d=new Date(f.modified);
                 var ds=d.toLocaleDateString('uk-UA',{day:'numeric',month:'short'});
-                html+='<div class="file-item"><div class="file-item-left"><svg class="file-item-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/></svg><span class="file-item-name">'+f.name+'</span></div><span class="file-item-date">'+ds+'</span></div>';
+                html+='<div class="file-item"><div class="file-item-left"><svg class="file-item-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/></svg><span class="file-item-name">'+driveLink(f)+'</span></div><span class="file-item-date">'+ds+'</span></div>';
             });
         }
         body.innerHTML = html;
