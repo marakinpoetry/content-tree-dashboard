@@ -1,40 +1,71 @@
-name: Sync Dashboard from Google Drive                                                                                                                  
-                                                                                                                                                          
-on:                                                                                                                                                     
-    schedule:                                                                                                                                             
-      - cron: '0 */3 * * *'                                                                                                                               
-    workflow_dispatch:                                                                                                                                    
-                                                                                                                                                          
-permissions:                                                                                                                                            
-    contents: write                                                                                                                                       
-                                                                                                                                                          
-jobs:                                                                                                                                                   
-    sync:                                                                                                                                                 
-      runs-on: ubuntu-latest                                                                                                                              
-      steps:                                                                                                                                              
-        - uses: actions/checkout@v4                                                                                                                       
-        - uses: actions/setup-python@v5                                                                                                                   
-          with:                                                                                                                                           
-            python-version: '3.11'                                                                                                                        
-        - run: pip install pyyaml                                                                                                                         
-        - uses: AnimMouse/setup-rclone@v1                                                                                                                 
-          with:                                                                                                                                           
-            rclone_config: ${{ secrets.RCLONE_CONFIG }}                                                                                                   
-        - run: rclone sync wscontentdrive:Content ./Content --exclude ".DS_Store" --exclude "*.tmp" -v                                                    
-        - name: Update Google Drive URL mapping                                                                                                           
-          run: |                                                                                                                                          
-            rclone lsjson "wscontentdrive:Content" --recursive --files-only | python3 -c "                                                                
-            import json, sys                                                                                                                              
-            data = json.load(sys.stdin)                                                                                                                   
-            mapping = {f['Path']: f'https://drive.google.com/file/d/{f[\"ID\"]}/view' for f in data if f.get('ID')}                                       
-            with open('scripts/drive_url_mapping.json', 'w') as out:                                                                                      
-                json.dump(mapping, out, indent=2, ensure_ascii=False)                                                                                     
-            print(f'Updated mapping with {len(mapping)} files')                                                                                           
-            "                                                                                                                                             
-        - run: python scripts/generate_dashboard_data.py                                                                                                  
-        - run: |                                                                                                                                          
-            git config user.name "GitHub Action"                                                                                                          
-            git config user.email "action@github.com"                                                                                                     
-            git add data.json scripts/drive_url_mapping.json                                                                                              
-            git diff --staged --quiet || git commit -m "Auto-update"                                                                                      
-            git push
+name: Sync Dashboard from Google Drive
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Documents/CONTENT TREE/Content/**'
+      - 'Documents/CONTENT TREE/Dashboard/index.html'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install pyyaml
+
+      - uses: AnimMouse/setup-rclone@v1
+        with:
+          rclone_config: ${{ secrets.RCLONE_CONFIG }}
+
+      - name: Sync Content from Google Drive
+        run: rclone sync wscontentdrive:Content "./Documents/CONTENT TREE/Content" --exclude ".DS_Store" --exclude "*.tmp" -v
+
+      - name: Update Google Drive URL mapping
+        run: |
+          rclone lsjson "wscontentdrive:Content" --recursive --files-only | python3 -c "
+          import json, sys
+          data = json.load(sys.stdin)
+          mapping = {f['Path']: f'https://drive.google.com/file/d/{f[\"ID\"]}/view' for f in data if f.get('ID')}
+          with open('Documents/CONTENT TREE/scripts/drive_url_mapping.json', 'w') as out:
+              json.dump(mapping, out, indent=2, ensure_ascii=False)
+          print(f'Updated mapping with {len(mapping)} files')
+          "
+
+      - name: Generate dashboard data
+        working-directory: Documents/CONTENT TREE
+        run: |
+          python scripts/db/init_db.py --force
+          python scripts/db/sync.py
+          python scripts/db/export.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add "Documents/CONTENT TREE/Content/" "Documents/CONTENT TREE/Dashboard/data.json" "Documents/CONTENT TREE/scripts/drive_url_mapping.json"
+          git diff --staged --quiet || git commit -m "Auto-sync: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: Documents/CONTENT TREE/Dashboard
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
